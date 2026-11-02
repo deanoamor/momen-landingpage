@@ -1,9 +1,100 @@
-import Image from 'next/image'
+type Feature = { title: string; desc: string; icon: React.ReactNode }
+
+const FEATURES: Feature[] = [
+  {
+    title: 'Pembayaran',
+    desc: 'Bayar lebih cerdas, bukan lebih berat, dengan kontrol dan efisiensi yang lebih baik.',
+    icon: <path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z" />,
+  },
+  {
+    title: 'Penagihan',
+    desc: 'Dapatkan pembayaran lebih cepat dengan visibilitas dan kontrol yang lebih baik.',
+    icon: (
+      <>
+        <path d="M5 2v20l2.5-1.5L10 22l2-1.5 2 1.5 2.5-1.5L19 22V2l-2.5 1.5L14 2l-2 1.5L10 2 7.5 3.5 5 2Z" />
+        <path d="M9 8h6M9 12h6M9 16h4" />
+      </>
+    ),
+  },
+  {
+    title: 'Akun',
+    desc: 'Satu tempat untuk semua aktivitas keuangan Anda, dengan saldo yang diperbarui real-time.',
+    icon: (
+      <>
+        <rect x="2" y="6" width="20" height="14" rx="2" />
+        <path d="M2 10h20M16 15h2" />
+        <path d="M6 6V4h12v2" />
+      </>
+    ),
+  },
+  {
+    title: 'Tim',
+    desc: 'Kelola akses di seluruh organisasi Anda, dari admin hingga approver dan viewer.',
+    icon: (
+      <>
+        <circle cx="9" cy="8" r="3.5" />
+        <path d="M2.5 20v-1a5 5 0 0 1 5-5h3a5 5 0 0 1 5 5v1" />
+        <path d="M16 4.5a3.5 3.5 0 0 1 0 7M18.5 14a5 5 0 0 1 3 4.6V20" />
+      </>
+    ),
+  },
+  {
+    title: 'Link Pembayaran',
+    desc: 'Buat dan bagikan link pembayaran untuk menerima pembayaran dengan mudah.',
+    icon: (
+      <>
+        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+      </>
+    ),
+  },
+  {
+    title: 'Multiple Account',
+    desc: 'Kelola beberapa rekening sekaligus untuk proses pencairan yang lebih fleksibel.',
+    icon: (
+      <>
+        <path d="m12 2 10 5-10 5L2 7l10-5Z" />
+        <path d="m2 12 10 5 10-5M2 17l10 5 10-5" />
+      </>
+    ),
+  },
+]
 
 export default function Fitur() {
   return (
-    <>
-<section id="features" style={{"position":"relative","overflow":"clip","background":"#1E4841","color":"#fff","padding":"clamp(56px,7vw,100px) 0"}}><div aria-hidden="true" style={{"position":"absolute","right":"-260px","top":"-300px","width":"900px","height":"900px","borderRadius":"50%","border":"130px solid rgba(255,255,255,.035)"}}></div><div style={{"position":"relative","maxWidth":"1440px","margin":"0 auto","padding":"0 clamp(16px,5.5vw,80px)"}}><div className="fg"><div className="rv f6" style={{"minWidth":"0","display":"flex","flexDirection":"column","justifyContent":"space-between","gap":"32px","padding":"8px 0"}}><div><span style={{"display":"inline-flex","padding":"7px 16px","borderRadius":"999px","fontSize":"16px","fontWeight":"500","border":"1px solid rgba(255,255,255,.3)","background":"rgba(255,255,255,.1)"}}>Semua yang Anda Butuhkan</span><h2 style={{"margin":"24px 0 0","fontSize":"clamp(32px,3.34vw,48px)","lineHeight":"1.2","fontWeight":"400","letterSpacing":"-0.01em"}}>Fitur Utama</h2></div><p style={{"margin":"0","maxWidth":"26em","fontSize":"16px","lineHeight":"1.65","color":"rgba(255,255,255,.78)"}}>Dari akun, pembayaran, dan penagihan hingga akses tim, semua kebutuhan keuangan bisnis Anda ada di satu dashboard.</p></div><div className="rv fc f3" style={{"minWidth":"0","minHeight":"380px","padding":"28px","borderRadius":"24px","background":"#fff","color":"#242E2C","display":"flex","flexDirection":"column","justifyContent":"space-between","gap":"20px"}}><h3 style={{"margin":"0","fontSize":"24px","lineHeight":"1.25","fontWeight":"400","letterSpacing":"-0.01em"}}>Pembayaran</h3><div className="fm" style={{"height":"150px","borderRadius":"12px","background":"#F4F6F6","padding":"14px","overflow":"hidden","color":"#242E2C","WebkitMaskImage":"linear-gradient(180deg,#000 78%,transparent 100%)","maskImage":"linear-gradient(180deg,#000 78%,transparent 100%)"}}><div style={{"display":"flex","alignItems":"center","justifyContent":"space-between"}}><span style={{"fontSize":"12px","fontWeight":"500"}}>Tagihan</span><span style={{"display":"inline-flex","alignItems":"center","height":"22px","padding":"0 10px","borderRadius":"999px","background":"#1E4841","color":"#fff","fontSize":"10px","fontWeight":"500","whiteSpace":"nowrap"}}>Bayar</span></div><div style={{"marginTop":"8px","padding":"9px 10px","borderRadius":"10px","background":"#fff","border":"1px solid #E9ECEB"}}><div style={{"fontSize":"11px","fontWeight":"500","lineHeight":"1.35","overflow":"hidden","textOverflow":"ellipsis","whiteSpace":"nowrap"}}>PT Sinar Cahaya</div><div style={{"display":"flex","alignItems":"center","gap":"6px","marginTop":"6px"}}><span style={{"display":"inline-flex","alignItems":"center","height":"18px","padding":"0 8px","borderRadius":"999px","background":"#F05A0E","color":"#fff","fontSize":"10px","fontWeight":"500","whiteSpace":"nowrap"}}>Tagihan</span><span style={{"marginLeft":"auto","fontSize":"11px","fontWeight":"600","whiteSpace":"nowrap","color":"#B4410A"}}>-Rp17.800.000</span></div></div><div style={{"marginTop":"8px","padding":"9px 10px","borderRadius":"10px","background":"#fff","border":"1px solid #E9ECEB"}}><div style={{"fontSize":"11px","fontWeight":"500","lineHeight":"1.35","overflow":"hidden","textOverflow":"ellipsis","whiteSpace":"nowrap"}}>PT Matahari Bersinar</div><div style={{"display":"flex","alignItems":"center","gap":"6px","marginTop":"6px"}}><span style={{"display":"inline-flex","alignItems":"center","height":"18px","padding":"0 8px","borderRadius":"999px","background":"#F05A0E","color":"#fff","fontSize":"10px","fontWeight":"500","whiteSpace":"nowrap"}}>Transfer</span><span style={{"marginLeft":"auto","fontSize":"11px","fontWeight":"600","whiteSpace":"nowrap","color":"#B4410A"}}>-Rp17.800.000</span></div></div></div><p className="fcp" style={{"margin":"0","fontSize":"16px","lineHeight":"1.55"}}>Bayar lebih cerdas, bukan lebih berat, dengan kontrol dan efisiensi yang lebih baik.</p></div><div className="rv fc f3" style={{"minWidth":"0","minHeight":"380px","padding":"28px","borderRadius":"24px","background":"#fff","color":"#242E2C","display":"flex","flexDirection":"column","justifyContent":"space-between","gap":"20px"}}><h3 style={{"margin":"0","fontSize":"24px","lineHeight":"1.25","fontWeight":"400","letterSpacing":"-0.01em"}}>Penagihan</h3><div className="fm" style={{"height":"150px","borderRadius":"12px","background":"#F4F6F6","padding":"14px","overflow":"hidden","color":"#242E2C","WebkitMaskImage":"linear-gradient(180deg,#000 78%,transparent 100%)","maskImage":"linear-gradient(180deg,#000 78%,transparent 100%)"}}><div style={{"display":"flex","alignItems":"center","justifyContent":"space-between"}}><span style={{"fontSize":"12px","fontWeight":"500"}}>Penagihan</span><span style={{"display":"inline-flex","alignItems":"center","height":"22px","padding":"0 10px","borderRadius":"999px","background":"#E4E8E7","color":"#242E2C","fontSize":"10px","fontWeight":"500","whiteSpace":"nowrap"}}>+ Payment Link</span></div><div style={{"marginTop":"8px","padding":"9px 10px","borderRadius":"10px","background":"#fff","border":"1px solid #E9ECEB"}}><div style={{"fontSize":"11px","fontWeight":"500","lineHeight":"1.35","overflow":"hidden","textOverflow":"ellipsis","whiteSpace":"nowrap"}}>PT Sari Roti Coklat</div><div style={{"display":"flex","alignItems":"center","gap":"6px","marginTop":"6px"}}><span style={{"display":"inline-flex","alignItems":"center","height":"18px","padding":"0 8px","borderRadius":"999px","background":"#1F5EE8","color":"#fff","fontSize":"10px","fontWeight":"500","whiteSpace":"nowrap"}}>Masuk</span><span style={{"marginLeft":"auto","fontSize":"11px","fontWeight":"600","whiteSpace":"nowrap","color":"#1E7A4C"}}>+Rp17.800.000</span></div></div><div style={{"marginTop":"8px","padding":"9px 10px","borderRadius":"10px","background":"#fff","border":"1px solid #E9ECEB"}}><div style={{"fontSize":"11px","fontWeight":"500","lineHeight":"1.35","overflow":"hidden","textOverflow":"ellipsis","whiteSpace":"nowrap"}}>PT Sinar Cahaya</div><div style={{"display":"flex","alignItems":"center","gap":"6px","marginTop":"6px"}}><span style={{"display":"inline-flex","alignItems":"center","height":"18px","padding":"0 8px","borderRadius":"999px","background":"#C9CFCE","color":"#242E2C","fontSize":"10px","fontWeight":"500","whiteSpace":"nowrap"}}>Menunggu</span><span style={{"marginLeft":"auto","fontSize":"11px","fontWeight":"600","whiteSpace":"nowrap","color":"#1E7A4C"}}>+Rp12.000.000</span></div></div></div><p className="fcp" style={{"margin":"0","fontSize":"16px","lineHeight":"1.55"}}>Dapatkan pembayaran lebih cepat dengan visibilitas dan kontrol yang lebih baik.</p></div><div className="rv fc f8" style={{"position":"relative","overflow":"hidden","minWidth":"0","minHeight":"440px","padding":"28px","borderRadius":"24px","background":"#fff","color":"#242E2C","display":"flex","flexDirection":"column","justifyContent":"flex-start","gap":"12px"}}><h3 style={{"margin":"0","fontSize":"24px","lineHeight":"1.25","fontWeight":"400","letterSpacing":"-0.01em"}}>Akun</h3><p className="fcp" style={{"position":"relative","margin":"0","maxWidth":"15em","fontSize":"16px","lineHeight":"1.55"}}>Satu tempat untuk semua aktivitas keuangan Anda</p><div className="fm fm-img" style={{"position":"absolute","right":"0","bottom":"0","width":"min(520px,62%)","border":"1px solid #E5E6E6","borderRight":"0","borderBottom":"0","borderRadius":"16px 0 0 0","overflow":"hidden","background":"#F4F6F6"}}><Image src="/img/business-akun.png" alt="Layar Akun di dashboard bisnis Momen" width={508} height={362} style={{"display":"block","width":"100%","height":"auto"}} sizes="(max-width: 900px) 100vw, 640px" /></div></div><div className="rv fc f4" style={{"position":"relative","overflow":"hidden","minWidth":"0","minHeight":"440px","padding":"28px","borderRadius":"24px","background":"#fff","color":"#242E2C"}}><h3 style={{"margin":"0","fontSize":"24px","lineHeight":"1.25","fontWeight":"400","letterSpacing":"-0.01em"}}>Tim</h3><p className="fcp" style={{"margin":"12px 0 0","maxWidth":"15em","fontSize":"16px","lineHeight":"1.55"}}>Kelola akses di seluruh organisasi Anda</p><div className="fm fm-up" style={{"position":"absolute","left":"28px","right":"28px","bottom":"-10px","height":"246px","borderRadius":"14px 14px 0 0","background":"#F4F6F6","padding":"16px","overflow":"hidden","color":"#242E2C"}}><div style={{"display":"flex","alignItems":"center","justifyContent":"space-between"}}><span style={{"fontSize":"12px","fontWeight":"500"}}>Anggota Tim</span><span style={{"display":"inline-flex","alignItems":"center","height":"22px","padding":"0 10px","borderRadius":"999px","background":"#1E4841","color":"#fff","fontSize":"10px","fontWeight":"500","whiteSpace":"nowrap"}}>+ Undang</span></div><div style={{"display":"flex","alignItems":"center","gap":"10px","marginTop":"8px","padding":"8px 10px","borderRadius":"10px","background":"#fff","border":"1px solid #E9ECEB"}}><span style={{"flex":"none","width":"28px","height":"28px","borderRadius":"50%","background":"#DDEBE6","color":"#1E4841","display":"flex","alignItems":"center","justifyContent":"center","fontSize":"12px","fontWeight":"600"}}>A</span><div style={{"flex":"1","minWidth":"0"}}><div style={{"fontSize":"12px","fontWeight":"500","lineHeight":"1.3"}}>Admin</div><div style={{"fontSize":"10px","color":"#8A9190","marginTop":"2px","whiteSpace":"nowrap"}}>Akses penuh</div></div><span style={{"flex":"none","width":"30px","height":"18px","borderRadius":"999px","background":"#1E4841","position":"relative"}}><span style={{"position":"absolute","top":"2px","right":"2px","width":"14px","height":"14px","borderRadius":"50%","background":"#fff"}}></span></span></div><div style={{"display":"flex","alignItems":"center","gap":"10px","marginTop":"8px","padding":"8px 10px","borderRadius":"10px","background":"#fff","border":"1px solid #E9ECEB"}}><span style={{"flex":"none","width":"28px","height":"28px","borderRadius":"50%","background":"#DDEBE6","color":"#1E4841","display":"flex","alignItems":"center","justifyContent":"center","fontSize":"12px","fontWeight":"600"}}>P</span><div style={{"flex":"1","minWidth":"0"}}><div style={{"fontSize":"12px","fontWeight":"500","lineHeight":"1.3"}}>Approver</div><div style={{"fontSize":"10px","color":"#8A9190","marginTop":"2px","whiteSpace":"nowrap"}}>Setujui pembayaran</div></div><span style={{"flex":"none","width":"30px","height":"18px","borderRadius":"999px","background":"#1E4841","position":"relative"}}><span style={{"position":"absolute","top":"2px","right":"2px","width":"14px","height":"14px","borderRadius":"50%","background":"#fff"}}></span></span></div><div style={{"display":"flex","alignItems":"center","gap":"10px","marginTop":"8px","padding":"8px 10px","borderRadius":"10px","background":"#fff","border":"1px solid #E9ECEB"}}><span style={{"flex":"none","width":"28px","height":"28px","borderRadius":"50%","background":"#DDEBE6","color":"#1E4841","display":"flex","alignItems":"center","justifyContent":"center","fontSize":"12px","fontWeight":"600"}}>V</span><div style={{"flex":"1","minWidth":"0"}}><div style={{"fontSize":"12px","fontWeight":"500","lineHeight":"1.3"}}>Viewer</div><div style={{"fontSize":"10px","color":"#8A9190","marginTop":"2px","whiteSpace":"nowrap"}}>Hanya lihat laporan</div></div><span style={{"flex":"none","width":"30px","height":"18px","borderRadius":"999px","background":"#C9CFCE","position":"relative"}}><span style={{"position":"absolute","top":"2px","left":"2px","width":"14px","height":"14px","borderRadius":"50%","background":"#fff"}}></span></span></div></div></div></div></div></section>
-    </>
+    <section id="features" className="fx">
+      <div aria-hidden="true" className="fx-ring" />
+      <div className="fx-in">
+        <div className="rv fx-head">
+          <span className="fx-badge">Semua yang Anda Butuhkan</span>
+          <h2 className="fx-title">
+            Fitur Utama, <span>semua kebutuhan keuangan bisnis dalam satu dashboard</span>
+          </h2>
+        </div>
+        <ul className="rv fx-grid">
+          {FEATURES.map((f) => (
+            <li key={f.title} className="fx-cell">
+              <span className="fx-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  {f.icon}
+                </svg>
+              </span>
+              <h3>{f.title}</h3>
+              <p>{f.desc}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
   )
 }
