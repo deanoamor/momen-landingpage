@@ -39,6 +39,9 @@ export function initMotion(Lenis?: LenisCtor): () => void {
     })
   }
 
+  // ---- FAQ accordions ----
+  if (!reduce) cleanups.push(initAccordions())
+
   // ---- Scroll reveal ----
   if (reduce || !('IntersectionObserver' in window)) return () => cleanups.forEach((c) => c())
 
@@ -103,4 +106,92 @@ export function initMotion(Lenis?: LenisCtor): () => void {
     auto.forEach((el) => el.classList.remove('rv', 'rv-auto', 'rv-img', 'rv-pre', 'rv-in'))
   })
   return () => cleanups.forEach((c) => c())
+}
+
+/**
+ * Smooth open/close for FAQ <details>. The native `name` grouping (only one open per
+ * group) is moved to `data-acc` while JS runs so both items can animate at once;
+ * without JS the native behaviour stays.
+ */
+const EASE = 'cubic-bezier(.22,.7,.2,1)'
+const DURATION = 420
+
+function initAccordions(): () => void {
+  const items = Array.from(document.querySelectorAll<HTMLDetailsElement>('main details:not(.mm)'))
+  const anims = new Map<HTMLDetailsElement, Animation>()
+
+  items.forEach((d) => {
+    const name = d.getAttribute('name')
+    if (name) {
+      d.dataset.acc = name
+      d.removeAttribute('name')
+    }
+  })
+
+  const animate = (d: HTMLDetailsElement, open: boolean) => {
+    const summary = d.querySelector('summary')
+    if (!summary) return
+    anims.get(d)?.cancel()
+    const start = d.offsetHeight
+    let end: number
+    if (open) {
+      delete d.dataset.closing
+      d.open = true
+      end = d.offsetHeight
+    } else {
+      d.dataset.closing = ''
+      const border = d.offsetHeight - d.clientHeight
+      end = summary.offsetHeight + border
+    }
+    d.style.overflow = 'hidden'
+    const a = d.animate({ height: [`${start}px`, `${end}px`] }, { duration: DURATION, easing: EASE })
+    anims.set(d, a)
+    if (open) {
+      Array.from(d.children)
+        .filter((el) => el !== summary)
+        .forEach((el) =>
+          el.animate(
+            { opacity: [0, 1], transform: ['translateY(-6px)', 'none'] },
+            { duration: DURATION, easing: EASE },
+          ),
+        )
+    }
+    const finish = () => {
+      anims.delete(d)
+      d.style.overflow = ''
+      if (!open) {
+        d.open = false
+        delete d.dataset.closing
+      }
+    }
+    a.onfinish = finish
+    a.oncancel = () => {
+      d.style.overflow = ''
+    }
+  }
+
+  const onClick = (e: Event) => {
+    const summary = (e.target as Element).closest('summary')
+    const d = summary?.parentElement
+    if (!summary || !(d instanceof HTMLDetailsElement) || !items.includes(d)) return
+    e.preventDefault()
+    const opening = !d.open || d.dataset.closing !== undefined
+    if (opening && d.dataset.acc) {
+      items
+        .filter((o) => o !== d && o.dataset.acc === d.dataset.acc && o.open && o.dataset.closing === undefined)
+        .forEach((o) => animate(o, false))
+    }
+    animate(d, opening)
+  }
+  document.addEventListener('click', onClick)
+
+  return () => {
+    document.removeEventListener('click', onClick)
+    anims.forEach((a) => a.cancel())
+    items.forEach((d) => {
+      if (d.dataset.acc) d.setAttribute('name', d.dataset.acc)
+      delete d.dataset.acc
+      delete d.dataset.closing
+    })
+  }
 }

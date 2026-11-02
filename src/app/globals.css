@@ -6,8 +6,10 @@ a.dk:hover{background:#0E2723}
 a.foot:hover{text-decoration:underline;text-underline-offset:3px}
 summary{list-style:none;cursor:pointer}
 summary::-webkit-details-marker{display:none}
-details[open] .vl{opacity:0}
-details[open]{background:#fff !important;border-color:#1E4841 !important}
+details[open]:not([data-closing]) .vl{opacity:0;transform:rotate(90deg)}
+details[open]:not([data-closing]){background:#fff !important;border-color:#1E4841 !important}
+details{transition:border-color .35s cubic-bezier(.4,0,.2,1),background-color .35s cubic-bezier(.4,0,.2,1)}
+.vl{transform-box:fill-box;transform-origin:center;transition:opacity .35s cubic-bezier(.4,0,.2,1),transform .35s cubic-bezier(.4,0,.2,1)}
 details summary:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid #E4F223;outline-offset:3px}
 html{scroll-behavior:smooth;scroll-padding-top:16px}
 .rv.rv-pre{opacity:0;transform:translateY(48px) scale(.985);filter:blur(6px)}
