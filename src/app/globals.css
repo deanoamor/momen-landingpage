@@ -58,7 +58,7 @@ a.navlink.is-active::after{content:"";position:absolute;left:0;right:0;bottom:-6
 .mm[open]>summary{position:fixed;top:30px;right:28px;border-color:transparent;background:rgba(255,255,255,.12);color:#fff}
 .mm[open] .mm-a{display:none}.mm[open] .mm-x{display:inline}
 .mm[open]::before{content:"";position:fixed;inset:0;z-index:69;background:rgba(8,20,17,.55);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);animation:mmFade .3s ease both}
-.mm-panel{position:fixed;top:8px;left:8px;right:8px;z-index:70;display:flex;flex-direction:column;max-height:calc(100dvh - 16px);overflow:auto;overscroll-behavior:contain;padding:22px 20px 24px;border-radius:24px;background:#123C35;color:#fff;box-shadow:0 30px 60px -20px rgba(0,0,0,.5);isolation:isolate;animation:mmIn .45s cubic-bezier(.22,.7,.2,1) both}
+.mm-panel{position:fixed;top:8px;left:8px;right:8px;z-index:70;display:flex;flex-direction:column;max-height:calc(100dvh - 16px);overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none;padding:22px 20px 24px;border-radius:24px;background:#123C35;color:#fff;box-shadow:0 30px 60px -20px rgba(0,0,0,.5);isolation:isolate;animation:mmIn .45s cubic-bezier(.22,.7,.2,1) both}
 .mm-top{display:flex;align-items:center;min-height:44px;padding-right:56px}
 .mm-logo{display:inline-flex;align-items:baseline;font-weight:600;font-size:26px;line-height:1;letter-spacing:-.045em;color:#fff}
 .mm-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#E4F223;margin-left:2px}
@@ -71,8 +71,10 @@ a.navlink.is-active::after{content:"";position:absolute;left:0;right:0;bottom:-6
 .mm-cta{display:inline-flex;align-items:center;min-height:52px;padding:0 28px;border-radius:999px;background:#E4F223;color:#123C35;font-size:15px;font-weight:500}
 .mm-cta:hover{background:#D6E41A}
 .mm-lang{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-size:14px;color:rgba(255,255,255,.7)}
-.mm-ring{position:absolute;z-index:-1;right:-90px;bottom:-110px;width:280px;height:280px;border-radius:50%;border:1px solid rgba(255,255,255,.14);pointer-events:none}
-.mm-ring::after{content:"";position:absolute;top:-1px;left:-60px;width:100%;height:100%;border-radius:50%;border:1px solid rgba(255,255,255,.1)}
+.mm-ring{position:absolute;inset:0;z-index:-1;overflow:hidden;border-radius:inherit;pointer-events:none}
+.mm-ring::before,.mm-ring::after{content:"";position:absolute;right:-90px;bottom:-110px;width:280px;height:280px;border-radius:50%;border:1px solid rgba(255,255,255,.14)}
+.mm-ring::after{right:-30px;border-color:rgba(255,255,255,.1)}
+.mm-panel::-webkit-scrollbar{display:none}
 @keyframes mmIn{from{opacity:0;transform:translateY(-10px) scale(.985)}to{opacity:1;transform:none}}
 @keyframes mmFade{from{opacity:0}to{opacity:1}}
 @media (prefers-reduced-motion:reduce){.mm-panel,.mm-link,.mm[open]::before{animation:none}}
