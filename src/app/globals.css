@@ -84,3 +84,12 @@ img{max-width:100%}
 .hero-text{flex:1 1 auto;display:flex;flex-direction:column;justify-content:center;align-items:center;padding-bottom:clamp(24px,4vh,48px) !important}
 .hero-media{flex:0 0 auto;margin-top:0 !important}
 .hero-media img{max-height:max(220px,calc(100svh - 470px));object-fit:contain;object-position:center bottom}
+/* Business hero dashboard: shrinks with the screen so it never covers the text,
+   and moves below the text on tablets/phones */
+.hero-biz-img{width:clamp(380px,calc(100vw - 660px),750px);z-index:0}
+.hero-business>.hero-in{z-index:1}
+@media (max-width:1100px){.hero-biz-img{right:-40px !important}}
+@media (max-width:900px){
+.hero-business>.hero-in{flex:0 0 auto;padding-bottom:40px !important}
+.hero-biz-img{position:relative !important;order:2;right:auto !important;width:calc(100% - max(16px,5.5vw));margin-left:auto;margin-top:auto}
+}

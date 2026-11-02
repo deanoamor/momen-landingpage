@@ -51,7 +51,7 @@ export function initMotion(Lenis?: LenisCtor): () => void {
 
   const manual = Array.from(document.querySelectorAll<HTMLElement>('.rv'))
   const auto = Array.from(document.querySelectorAll<HTMLElement>(AUTO)).filter((el) => {
-    if (el.closest('.rv, .rv-auto, header, .tabs .tp') || el.querySelector('.rv')) return false
+    if (el.closest('.rv, .rv-auto, header, .hero, .tabs .tp') || el.querySelector('.rv')) return false
     if (el.style.transform || getComputedStyle(el).transform !== 'none') return false
     if (!visible(el)) return false
     el.classList.add('rv', 'rv-auto')
