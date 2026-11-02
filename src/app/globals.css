@@ -76,3 +76,11 @@ a.navlink.is-active::after{content:"";position:absolute;left:0;right:0;bottom:-6
 html{-webkit-text-size-adjust:100%}
 img{max-width:100%}
 @media (max-width:560px){.cd .th{aspect-ratio:260/152}footer nav[aria-label="Footer"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important}}
+/* Hero sections fill the viewport */
+.hero{min-height:100vh;min-height:100svh;display:flex;flex-direction:column}
+.hero>.hero-in{flex:1 0 auto;width:100%;display:flex;flex-direction:column;justify-content:center}
+.hero-front{height:100vh;height:100svh;min-height:640px}
+.hero-front>.hero-in{flex:1 1 auto;min-height:0;justify-content:flex-start}
+.hero-text{flex:1 1 auto;display:flex;flex-direction:column;justify-content:center;align-items:center;padding-bottom:clamp(24px,4vh,48px) !important}
+.hero-media{flex:0 0 auto;margin-top:0 !important}
+.hero-media img{max-height:max(220px,calc(100svh - 470px));object-fit:contain;object-position:center bottom}
