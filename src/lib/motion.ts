@@ -12,6 +12,8 @@
 type LenisLike = {
   raf(time: number): void
   destroy(): void
+  stop(): void
+  start(): void
 }
 type LenisCtor = new (opts: Record<string, unknown>) => LenisLike
 
@@ -25,19 +27,24 @@ export function initMotion(Lenis?: LenisCtor): () => void {
   const cleanups: Array<() => void> = []
 
   // ---- Smooth scroll ----
+  let lenis: LenisLike | null = null
   if (Lenis && !reduce) {
-    const lenis = new Lenis({ lerp: 0.085, smoothWheel: true, anchors: { offset: -16 } })
+    lenis = new Lenis({ lerp: 0.085, smoothWheel: true, anchors: { offset: -16 } })
+    const l = lenis
     let id = 0
     const loop = (t: number) => {
-      lenis.raf(t)
+      l.raf(t)
       id = requestAnimationFrame(loop)
     }
     id = requestAnimationFrame(loop)
     cleanups.push(() => {
       cancelAnimationFrame(id)
-      lenis.destroy()
+      l.destroy()
     })
   }
+
+  // ---- Mobile menu ----
+  cleanups.push(initMenu(() => lenis))
 
   // ---- FAQ accordions ----
   if (!reduce) cleanups.push(initAccordions())
@@ -200,5 +207,44 @@ function initAccordions(): () => void {
       delete d.dataset.acc
       delete d.dataset.closing
     })
+  }
+}
+
+/**
+ * Full-screen mobile menu (<details class="mm">). Works without JS; with JS it also
+ * closes on link click, backdrop click and Escape, and locks page scroll while open.
+ */
+function initMenu(getLenis: () => LenisLike | null): () => void {
+  const menus = Array.from(document.querySelectorAll<HTMLDetailsElement>('details.mm'))
+  const lock = (on: boolean) => {
+    document.documentElement.style.overflow = on ? 'hidden' : ''
+    const l = getLenis()
+    if (l) (on ? l.stop() : l.start())
+  }
+  const onToggle = (e: Event) => lock((e.currentTarget as HTMLDetailsElement).open)
+  const onClick = (e: MouseEvent) => {
+    const t = e.target as Element
+    menus.forEach((m) => {
+      if (!m.open) return
+      if (t.closest('.mm-panel a') || (!t.closest('.mm-panel') && !t.closest('summary'))) m.open = false
+    })
+  }
+  const onKey = (e: KeyboardEvent) => {
+    if (e.key !== 'Escape') return
+    menus.forEach((m) => {
+      if (m.open) {
+        m.open = false
+        m.querySelector('summary')?.focus()
+      }
+    })
+  }
+  menus.forEach((m) => m.addEventListener('toggle', onToggle))
+  document.addEventListener('click', onClick)
+  document.addEventListener('keydown', onKey)
+  return () => {
+    menus.forEach((m) => m.removeEventListener('toggle', onToggle))
+    document.removeEventListener('click', onClick)
+    document.removeEventListener('keydown', onKey)
+    lock(false)
   }
 }
