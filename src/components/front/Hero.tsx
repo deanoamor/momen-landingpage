@@ -1,0 +1,9 @@
+import Image from 'next/image'
+
+export default function Hero() {
+  return (
+    <>
+<section id="top" style={{"position":"relative","overflow":"hidden","color":"#1E4841","background":"linear-gradient(rgba(30,72,65,.045) 1px,transparent 1px) 0 0/56px 56px,linear-gradient(90deg,rgba(30,72,65,.045) 1px,transparent 1px) 0 0/56px 56px,radial-gradient(55% 60% at 18% 18%,rgba(228,242,35,.30),transparent 70%),radial-gradient(55% 60% at 86% 22%,rgba(30,72,65,.16),transparent 70%),linear-gradient(180deg,#fff 0%,#F5F9F6 100%)"}}><div style={{"position":"relative","maxWidth":"1440px","margin":"0 auto","padding":"88px clamp(16px,5.5vw,80px) 0"}}><div style={{"textAlign":"center","padding":"clamp(48px,7vw,104px) 0 0"}}><h1 style={{"margin":"0 auto","maxWidth":"14.5em","fontSize":"clamp(40px,4.45vw,64px)","lineHeight":"1.15","fontWeight":"400","letterSpacing":"-0.01em","color":"#242E2C","textWrap":"balance"}}>Satu Platform untuk{' '}<span style={{"display":"inline-block","padding":"0 .22em .06em","margin":"0 -.04em","borderRadius":".2em","background":"#E4F223","color":"#1E4841"}}>Berbagai Solusi</span>{' '}Keuangan Anda</h1><a className="dk" href="#mengapa" style={{"display":"inline-flex","alignItems":"center","justifyContent":"center","minHeight":"56px","marginTop":"40px","padding":"0 36px","borderRadius":"999px","background":"#1E4841","color":"#fff","fontSize":"14px","fontWeight":"500","boxShadow":"0 14px 28px -12px rgba(30,72,65,.55)"}}>Explore Fitur Kami</a></div><div style={{"display":"flex","justifyContent":"center","marginTop":"clamp(40px,5vw,64px)"}}><Image src="/img/front-hero.png" alt="Dashboard bisnis Momen di laptop dan aplikasi Momen di ponsel" width={1752} height={746} style={{"display":"block","width":"min(900px,100%)","height":"auto"}} priority sizes="(max-width: 900px) 100vw, 760px" /></div></div></section>
+    </>
+  )
+}

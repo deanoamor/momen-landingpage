@@ -1,0 +1,88 @@
+{
+ "front": [
+  [
+   "Apa itu Kasbon?",
+   "Kasbon memungkinkan karyawan mengakses sebagian gaji yang sudah diperoleh sebelum hari gajian, tanpa mengambil pinjaman."
+  ],
+  [
+   "Apakah ini pinjaman?",
+   "Bukan. Kasbon adalah akses lebih awal ke gaji yang sudah menjadi hak Anda, jadi tidak ada utang yang menumpuk."
+  ],
+  [
+   "Apakah ada bunga atau biaya tersembunyi?",
+   "Tidak ada bunga dan tidak ada biaya tersembunyi. Rincian pencairan ditampilkan sebelum Anda mengonfirmasi."
+  ],
+  [
+   "Berapa banyak yang bisa diakses?",
+   "Sesuai limit yang tampil di aplikasi, yang mengikuti kebijakan perusahaan dan gaji yang sudah Anda peroleh."
+  ],
+  [
+   "Seberapa cepat dana diterima karyawan?",
+   "Setelah pengajuan disetujui, Momen mengirimkan dana langsung ke rekening karyawan."
+  ],
+  [
+   "Apakah ini memengaruhi payroll?",
+   "Tidak mengganggu proses payroll. Nominal kasbon dipotong saat hari gajian."
+  ],
+  [
+   "Apakah aman?",
+   "Ya. Momen bekerja sama dengan mitra berlisensi yang diawasi Bank Indonesia, dan terdaftar sebagai Penyelenggara Sistem Elektronik."
+  ]
+ ],
+ "personal": [
+  [
+   "Apa itu Kasbon?",
+   "Kasbon memungkinkan karyawan mengakses sebagian gaji yang sudah diperoleh sebelum hari gajian, tanpa mengambil pinjaman."
+  ],
+  [
+   "Apakah ini pinjaman?",
+   "Bukan. Kasbon adalah akses lebih awal ke gaji yang sudah menjadi hak Anda, jadi tidak ada utang yang menumpuk."
+  ],
+  [
+   "Apakah ada bunga atau biaya tersembunyi?",
+   "Tidak ada bunga dan tidak ada biaya tersembunyi. Rincian pencairan ditampilkan sebelum Anda mengonfirmasi."
+  ],
+  [
+   "Berapa banyak yang bisa diakses?",
+   "Sesuai limit yang tampil di aplikasi, yang mengikuti kebijakan perusahaan dan gaji yang sudah Anda peroleh."
+  ],
+  [
+   "Seberapa cepat dana diterima karyawan?",
+   "Setelah pengajuan disetujui, Momen mengirimkan dana langsung ke rekening karyawan."
+  ],
+  [
+   "Apakah ini memengaruhi payroll?",
+   "Tidak mengganggu proses payroll. Nominal kasbon dipotong saat hari gajian."
+  ],
+  [
+   "Apakah aman?",
+   "Ya. Momen bekerja sama dengan mitra berlisensi yang diawasi Bank Indonesia, dan terdaftar sebagai Penyelenggara Sistem Elektronik."
+  ]
+ ],
+ "business": [
+  [
+   "Bagaimana platform ini membantu bisnis saya?",
+   "Platform ini menyederhanakan operasional keuangan, dari pembayaran dan pengelolaan arus kas hingga benefit karyawan seperti EWA, semuanya dalam satu tempat."
+  ],
+  [
+   "Apakah ini memengaruhi proses penggajian yang sudah ada?",
+   "Tidak. Momen berjalan berdampingan dengan penggajian Anda, dan nominal yang dicairkan lebih awal dipotong otomatis saat hari gajian."
+  ],
+  [
+   "Apa manfaat EWA bagi perusahaan saya?",
+   "Karyawan dapat mengakses gaji yang sudah menjadi hak mereka saat dibutuhkan, tanpa mengubah cara Anda menjalankan penggajian."
+  ],
+  [
+   "Apakah ada risiko keuangan bagi perusahaan?",
+   "Akses dibatasi pada gaji yang sudah menjadi hak karyawan, dan setiap permintaan dapat dipantau di dashboard Anda."
+  ],
+  [
+   "Apakah kami bisa mengatur akses karyawan?",
+   "Bisa. Admin menentukan siapa yang dapat menggunakan layanan dan mengelola akses dari dashboard bisnis."
+  ],
+  [
+   "Apakah cocok untuk perusahaan dengan ukuran berbeda?",
+   "Cocok. Momen dirancang untuk freelancer, UKM yang berkembang, hingga perusahaan besar."
+  ]
+ ]
+}
