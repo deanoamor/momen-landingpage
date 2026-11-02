@@ -44,7 +44,7 @@ html.lenis,html.lenis body{height:auto}
 .glass:hover{background:rgba(255,255,255,.16) !important;border-color:rgba(255,255,255,.32) !important}
 .sv{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:40px clamp(32px,5vw,80px);align-items:start}
 @media (max-width:1000px){.sv{grid-template-columns:minmax(0,1fr)}}
-.cd{display:flex;gap:24px;align-items:center}
+.cd{display:flex;gap:24px;align-items:flex-end}
 @media (max-width:560px){.cd{flex-direction:column;align-items:flex-start}.cd img,.cd .th{width:100% !important;height:auto !important}}
 a.navlink{position:relative;font-size:16px;color:rgba(30,72,65,.7);transition:color .25s}
 a.navlink:hover{color:#1E4841}
