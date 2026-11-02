@@ -118,7 +118,7 @@ const DURATION = 420
 
 function initAccordions(): () => void {
   const items = Array.from(document.querySelectorAll<HTMLDetailsElement>('main details:not(.mm)'))
-  const anims = new Map<HTMLDetailsElement, Animation>()
+  const anims = new Map<HTMLDetailsElement, Animation[]>()
 
   items.forEach((d) => {
     const name = d.getAttribute('name')
@@ -131,7 +131,7 @@ function initAccordions(): () => void {
   const animate = (d: HTMLDetailsElement, open: boolean) => {
     const summary = d.querySelector('summary')
     if (!summary) return
-    anims.get(d)?.cancel()
+    anims.get(d)?.forEach((a) => a.cancel())
     const start = d.offsetHeight
     let end: number
     if (open) {
@@ -144,28 +144,35 @@ function initAccordions(): () => void {
       end = summary.offsetHeight + border
     }
     d.style.overflow = 'hidden'
-    const a = d.animate({ height: [`${start}px`, `${end}px`] }, { duration: DURATION, easing: EASE })
-    anims.set(d, a)
-    if (open) {
-      Array.from(d.children)
-        .filter((el) => el !== summary)
-        .forEach((el) =>
-          el.animate(
-            { opacity: [0, 1], transform: ['translateY(-6px)', 'none'] },
-            { duration: DURATION, easing: EASE },
-          ),
-        )
-    }
-    const finish = () => {
+    const content = Array.from(d.children).filter((el) => el !== summary)
+    // Closing: the answer fades out first, then the card shrinks, so no text is
+    // ever sliced by the card's bottom edge. Opening: the card grows, then text fades in.
+    const height = d.animate(
+      { height: [`${start}px`, `${end}px`] },
+      { duration: DURATION, easing: EASE, delay: open ? 0 : DURATION * 0.25 },
+    )
+    const fades = content.map((el) =>
+      el.animate(
+        open
+          ? { opacity: [0, 1], transform: ['translateY(-6px)', 'none'] }
+          : { opacity: [1, 0], transform: ['none', 'translateY(-6px)'] },
+        open
+          ? { duration: DURATION, easing: EASE, delay: DURATION * 0.2, fill: 'backwards' }
+          : { duration: DURATION * 0.35, easing: 'ease-out', fill: 'forwards' },
+      ),
+    )
+    const all = [height, ...fades]
+    anims.set(d, all)
+    height.onfinish = () => {
       anims.delete(d)
       d.style.overflow = ''
       if (!open) {
         d.open = false
         delete d.dataset.closing
+        fades.forEach((f) => f.cancel())
       }
     }
-    a.onfinish = finish
-    a.oncancel = () => {
+    height.oncancel = () => {
       d.style.overflow = ''
     }
   }
@@ -187,7 +194,7 @@ function initAccordions(): () => void {
 
   return () => {
     document.removeEventListener('click', onClick)
-    anims.forEach((a) => a.cancel())
+    anims.forEach((list) => list.forEach((a) => a.cancel()))
     items.forEach((d) => {
       if (d.dataset.acc) d.setAttribute('name', d.dataset.acc)
       delete d.dataset.acc
