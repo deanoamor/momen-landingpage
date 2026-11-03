@@ -18,11 +18,11 @@ export const SEO: Record<'front' | 'personal' | 'business', Metadata> = {
     twitter: base.twitter,
   },
   personal: {
-    title: 'Momen Personal | Akses Gajimu Kapan Saja, Dimana Saja',
+    title: 'Momen Kasbon | Akses Gajimu Kapan Saja, Dimana Saja',
     description:
       'Cairkan gaji yang sudah kamu kerjakan sebelum tanggal gajian. Tanpa bunga, tanpa utang, langsung dari aplikasi Momen.',
     alternates: { canonical: '/personal' },
-    openGraph: { ...base.openGraph, url: '/personal', title: 'Momen Personal | Akses Gajimu Kapan Saja', images: [{ url: '/img/app-beranda.jpg' }] },
+    openGraph: { ...base.openGraph, url: '/personal', title: 'Momen Kasbon | Akses Gajimu Kapan Saja', images: [{ url: '/img/app-beranda.jpg' }] },
     twitter: base.twitter,
   },
   business: {
