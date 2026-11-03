@@ -27,5 +27,6 @@ Build versi Pages di lokal: `GITHUB_PAGES=true npm run build` (hasil di `out/`).
 `header` (banner) → `main#konten` → `footer`; satu `h1` per halaman, `h2` per section, `h3` per kartu/FAQ; `nav` berlabel; skip-link; gambar `next/image` dengan `alt`; `lang="id"`.
 
 ## Catatan
-- Beberapa teks (bullet list, FAQ Business, subcopy hero Business) dibuat sendiri, bukan dari Figma — cek ulang.
+- Teks mengikuti desain Claude Design terbaru. Beberapa teks (bullet list, FAQ Business, subcopy hero Business) dibuat sendiri, bukan dari Figma — cek ulang.
+- Link Login, Download, Privacy Policy, dan Terms masih `#top` (placeholder).
 - Tautan Login masih `#top`; ganti ke URL aplikasi saat tersedia.

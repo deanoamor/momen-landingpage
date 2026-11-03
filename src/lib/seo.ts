@@ -26,11 +26,11 @@ export const SEO: Record<'front' | 'personal' | 'business', Metadata> = {
     twitter: base.twitter,
   },
   business: {
-    title: 'Momen Business | Semua Keuangan Bisnis dalam Satu Tempat',
+    title: 'Momen Business | Semua Transaksi Bisnis dalam Satu Tempat',
     description:
       'Kelola pembayaran, penagihan, dan tim dalam satu platform. Terima, kelola, dan kirim dana bisnis dari satu dashboard.',
     alternates: { canonical: '/business' },
-    openGraph: { ...base.openGraph, url: '/business', title: 'Momen Business | Semua Keuangan Bisnis dalam Satu Tempat', images: [{ url: '/img/business-dashboard.png' }] },
+    openGraph: { ...base.openGraph, url: '/business', title: 'Momen Business | Semua Transaksi Bisnis dalam Satu Tempat', images: [{ url: '/img/business-dashboard.png' }] },
     twitter: base.twitter,
   },
 }
