@@ -162,7 +162,15 @@ html{scroll-padding-top:88px}
 
 /* Kasbon hero on tablets/phones: phone sits under the text, cropped by the section edge */
 @media (max-width:900px){
-.hero-phone{position:relative !important;order:2;top:auto !important;right:auto !important;width:auto !important;height:clamp(300px,62vw,420px) !important;align-items:flex-start !important;overflow:hidden;margin-top:8px}
+.hero-phone{position:relative !important;order:2;top:auto !important;right:auto !important;width:auto !important;height:clamp(300px,62vw,420px) !important;align-items:flex-start !important;overflow:hidden;margin-top:32px}
 .hero-phone>div{height:auto !important;width:min(300px,74vw);box-shadow:0 20px 40px -24px rgba(30,72,65,.45) !important}
 .hero-personal .hk-up+*,.hero-personal>.hero-in>div:not(.hero-phone){padding-bottom:16px !important}
+}
+
+/* Hero buttons on phones: stacked, full width */
+@media (max-width:600px){
+.hero-cta{flex-direction:column;align-items:stretch}
+.hero-cta>a{width:100%;justify-content:center}
+.hero-cta>a.gp{display:flex !important;align-items:center;min-height:56px;background:#000;border:1px solid #A7A7A7}
+.hero-cta>a.gp img{height:54px !important;clip-path:inset(3px round 999px)}
 }
