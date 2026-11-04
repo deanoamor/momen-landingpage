@@ -159,3 +159,10 @@ img{max-width:100%}
 @keyframes hd-bg{to{opacity:1}}
 html{scroll-padding-top:88px}
 @media (max-width:560px){.cd .ar{top:auto !important;bottom:24px !important}}
+
+/* Kasbon hero on tablets/phones: phone sits under the text, cropped by the section edge */
+@media (max-width:900px){
+.hero-phone{position:relative !important;order:2;top:auto !important;right:auto !important;width:auto !important;height:clamp(300px,62vw,420px) !important;align-items:flex-start !important;overflow:hidden;margin-top:8px}
+.hero-phone>div{height:auto !important;width:min(300px,74vw);box-shadow:0 20px 40px -24px rgba(30,72,65,.45) !important}
+.hero-personal .hk-up+*,.hero-personal>.hero-in>div:not(.hero-phone){padding-bottom:16px !important}
+}
