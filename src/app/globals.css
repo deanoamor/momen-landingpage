@@ -170,7 +170,7 @@ html{scroll-padding-top:88px}
 /* Hero and CTA buttons on phones: stacked, full width */
 @media (max-width:600px){
 .btn-row{flex-direction:column;align-items:stretch}
-.btn-row>a,.hero-btn{width:100%;justify-content:center}
+.btn-row>a,.hero-btn{width:100%;min-height:56px !important;justify-content:center}
 .btn-row>a:has(>span){position:relative;padding:0 60px !important}
 .btn-row>a>span{position:absolute;right:10px;top:50%;transform:translateY(-50%)}
 .btn-row>a.gp{display:flex !important;align-items:center;min-height:56px;background:#000;border:1px solid #A7A7A7;padding:0 !important}
