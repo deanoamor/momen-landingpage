@@ -82,7 +82,7 @@ a.navlink.is-active::after{content:"";position:absolute;left:0;right:0;bottom:-6
 .skip-link:focus{top:16px}
 html{-webkit-text-size-adjust:100%}
 img{max-width:100%}
-@media (max-width:560px){.cd .th{aspect-ratio:260/152}footer nav[aria-label="Footer"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important}}
+@media (max-width:560px){.cd .th{aspect-ratio:260/152}footer nav[aria-label="Footer"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:32px 20px !important}footer nav[aria-label="Footer"] .foot{white-space:normal}}
 /* Hero sections fill the viewport */
 .hero{min-height:100vh;min-height:100svh;display:flex;flex-direction:column}
 .hero>.hero-in{flex:1 0 auto;width:100%;display:flex;flex-direction:column;justify-content:center}
@@ -152,3 +152,10 @@ img{max-width:100%}
 .hero-media{margin-top:8px !important}
 .hero-media img{max-height:none}
 }
+
+.site-hd::before{content:"";position:absolute;inset:0;z-index:-1;background:rgba(255,255,255,.96);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid rgba(30,72,65,.08);opacity:0;pointer-events:none}
+@supports (animation-timeline:scroll()){.site-hd::before{animation:hd-bg linear both;animation-timeline:scroll(root block);animation-range:0 80px}}
+@supports not (animation-timeline:scroll()){.site-hd::before{opacity:1}}
+@keyframes hd-bg{to{opacity:1}}
+html{scroll-padding-top:88px}
+@media (max-width:560px){.cd .ar{top:auto !important;bottom:24px !important}}
