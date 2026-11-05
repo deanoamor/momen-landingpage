@@ -182,22 +182,22 @@ html{scroll-padding-top:88px}
 .btn-row>a.gp img{position:static;height:54px !important;clip-path:inset(3px round 999px)}
 }
 
-/* Login dropdown: full-screen panel on tablets/phones, like the mobile menu */
+/* Login dropdown: full-width white panel on tablets/phones, like the mobile menu */
 .lg-top,.lg-panel .lg-ring{display:none}
 @media (max-width:900px){
-.lg[open]::before{content:"";position:fixed;inset:0;z-index:69;background:rgba(8,20,17,.55);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);animation:mmFade .3s ease both}
-.lg-panel{position:fixed;top:8px;left:8px;right:8px;width:auto;z-index:70;max-height:calc(100dvh - 16px);overflow:hidden auto;padding:22px 20px 20px;border:0;border-radius:24px;background:#123C35;color:#fff;box-shadow:0 30px 60px -20px rgba(0,0,0,.5);isolation:isolate;animation:mmIn .45s cubic-bezier(.22,.7,.2,1) both;scrollbar-width:none}
+.lg[open]::before{content:"";position:fixed;inset:0;z-index:69;background:rgba(8,20,17,.45);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);animation:mmFade .3s ease both}
+.lg-panel{position:fixed;top:8px;left:8px;right:8px;width:auto;z-index:70;max-height:calc(100dvh - 16px);overflow:hidden auto;padding:22px 20px 20px;border:1px solid #E5E6E6;border-radius:24px;background:#fff;color:#1E4841;box-shadow:0 30px 60px -24px rgba(8,20,17,.35);isolation:isolate;animation:mmIn .45s cubic-bezier(.22,.7,.2,1) both;scrollbar-width:none}
 .lg-top{display:flex;align-items:center;justify-content:space-between;min-height:44px;margin-bottom:20px}
 .lg-top img{display:block;height:16px;width:auto}
-.lg-close{display:flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;border:0;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;cursor:pointer}
+.lg-close{display:flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;border:0;border-radius:50%;background:#F4F6F6;color:#1E4841;cursor:pointer}
 .lg-panel .lg-ring{display:block}
+.lg-panel .lg-ring::before,.lg-panel .lg-ring::after{border-color:rgba(30,72,65,.08)}
 .lg-opt{gap:16px;padding:16px 0;border-radius:0;animation:mmIn .5s cubic-bezier(.22,.7,.2,1) both}
-.lg-opt+.lg-opt{border-top-color:rgba(255,255,255,.12);animation-delay:.05s}
+.lg-opt+.lg-opt{animation-delay:.05s}
 .lg-opt:hover{background:transparent;border-radius:0}
-.lg-opt b{font-size:clamp(22px,6vw,28px);font-weight:400;letter-spacing:-.01em;color:#fff}
-.lg-opt small{font-size:14px;color:rgba(255,255,255,.6)}
-.lg-ic{width:52px;height:52px;border-radius:14px;border-color:rgba(255,255,255,.16);background:rgba(255,255,255,.06);color:#fff}
-.lg-go{width:40px;height:40px;border:1px solid rgba(255,255,255,.22);color:#fff}
-.lg-opt.b:hover .lg-go{background:#fff;color:#123C35}
+.lg-opt b{font-size:clamp(22px,6vw,28px);font-weight:400;letter-spacing:-.01em}
+.lg-opt small{font-size:14px}
+.lg-ic{width:52px;height:52px;border-radius:14px}
+.lg-go{width:40px;height:40px;border:1px solid rgba(30,72,65,.2)}
 }
 @media (max-width:900px) and (prefers-reduced-motion:reduce){.lg-panel,.lg-opt,.lg[open]::before{animation:none}}
