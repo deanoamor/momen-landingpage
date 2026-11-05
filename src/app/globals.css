@@ -201,3 +201,7 @@ html{scroll-padding-top:88px}
 .lg-go{width:40px;height:40px;border:1px solid rgba(30,72,65,.2)}
 }
 @media (max-width:900px) and (prefers-reduced-motion:reduce){.lg-panel,.lg-opt,.lg[open]::before{animation:none}}
+
+/* Bottom CTA images on tablets/phones: shown under the buttons, like the Kasbon CTA */
+@media (max-width:760px){.cta-art{flex:1 1 100% !important}.cta-art img{max-width:300px !important}}
+@media (max-width:900px){.cta-laptop{position:relative !important;display:block;right:auto !important;width:calc(100% - max(16px,5.5vw)) !important;max-width:560px;margin:0 0 0 auto}}
