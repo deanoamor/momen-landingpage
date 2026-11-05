@@ -4,6 +4,7 @@ import JsonLd from '@/components/JsonLd'
 import Reveal from '@/components/Reveal'
 import Hero from '@/components/business/Hero'
 import Fitur from '@/components/business/Fitur'
+import Api from '@/components/business/Api'
 import Solusi from '@/components/business/Solusi'
 import Faq from '@/components/business/Faq'
 import Cta from '@/components/business/Cta'
@@ -19,6 +20,7 @@ export default function Page() {
       <main id="konten">
         <Hero />
         <Fitur />
+        <Api />
         <Solusi />
         <Faq />
         <Cta />
