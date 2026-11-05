@@ -211,22 +211,27 @@ function initAccordions(): () => void {
 }
 
 /**
- * Full-screen mobile menu (<details class="mm">). Works without JS; with JS it also
+ * Full-screen mobile menu (<details class="mm">) and the Login dropdown (<details class="lg">,
+ * full-screen on tablets/phones). Work without JS; with JS they also
  * closes on link click, backdrop click and Escape, and locks page scroll while open.
  */
 function initMenu(getLenis: () => LenisLike | null): () => void {
-  const menus = Array.from(document.querySelectorAll<HTMLDetailsElement>('details.mm'))
+  const menus = Array.from(document.querySelectorAll<HTMLDetailsElement>('details.mm, details.lg'))
   const lock = (on: boolean) => {
     document.documentElement.style.overflow = on ? 'hidden' : ''
     const l = getLenis()
     if (l) (on ? l.stop() : l.start())
   }
-  const onToggle = (e: Event) => lock((e.currentTarget as HTMLDetailsElement).open)
+  // The Login dropdown only becomes a full-screen panel on tablets/phones.
+  const isFull = (m: HTMLDetailsElement) =>
+    m.classList.contains('mm') || window.matchMedia('(max-width: 900px)').matches
+  const onToggle = () => lock(menus.some((m) => m.open && isFull(m)))
   const onClick = (e: MouseEvent) => {
     const t = e.target as Element
     menus.forEach((m) => {
       if (!m.open) return
-      if (t.closest('.mm-panel a') || (!t.closest('.mm-panel') && !t.closest('summary'))) m.open = false
+      const inPanel = t.closest('.mm-panel, .lg-panel')
+      if (t.closest('.mm-panel a, .lg-panel a, .lg-close') || (!inPanel && !t.closest('summary'))) m.open = false
     })
   }
   const onKey = (e: KeyboardEvent) => {
