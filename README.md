@@ -34,3 +34,6 @@ Typo di desain Business ("Tansaksi", "dl satu platform", "yg lebih rapih") dirap
 - Teks mengikuti desain Claude Design terbaru. Beberapa teks (bullet list, FAQ Business, subcopy hero Business) dibuat sendiri, bukan dari Figma — cek ulang.
 - Link Login, Download, Privacy Policy, dan Terms masih `#top` (placeholder).
 - Tautan Login masih `#top`; ganti ke URL aplikasi saat tersedia.
+
+## Ilustrasi (SVG)
+Semua ilustrasi kartu (Layanan Business, Layanan Kasbon, "Tanpa Bunga dan bukan Utang") sekarang berupa SVG vektor di `src/components/Illustrations.tsx` — bukan PNG. Tiap bentuk, warna, dan ikon bisa diedit langsung, dan tidak ada teks di dalam gambar supaya mudah diterjemahkan.
