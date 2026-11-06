@@ -1,7 +1,8 @@
-// GITHUB_PAGES=true builds a static export served under /momen-landingpage
-// (see .github/workflows/pages.yml). Normal `npm run build` is unchanged.
+// GITHUB_PAGES=true builds a static export for GitHub Pages (see .github/workflows/pages.yml).
+// Custom domain (momen.co) is served from the root, so basePath is empty by default.
+// Set BASE_PATH=/momen-landingpage only if you need the github.io/<repo> URL again.
 const isPages = process.env.GITHUB_PAGES === 'true'
-const basePath = isPages ? '/momen-landingpage' : ''
+const basePath = process.env.BASE_PATH ?? ''
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {

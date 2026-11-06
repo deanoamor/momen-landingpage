@@ -28,7 +28,7 @@ jobs:
         run: npm run build
         env:
           GITHUB_PAGES: 'true'
-          NEXT_PUBLIC_SITE_URL: https://deanoamor.github.io/momen-landingpage
+          NEXT_PUBLIC_SITE_URL: https://momen.co
       - run: touch out/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
