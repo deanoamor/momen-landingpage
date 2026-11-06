@@ -47,10 +47,10 @@ export const SEO: Record<'front' | 'personal' | 'business' | 'hubungi' | 'tnc' |
     twitter: base.twitter,
   },
   hapus: {
-    title: 'Hapus Akun | momen.',
+    title: 'Penutupan Akun | momen.',
     description: 'Cara mengajukan penghapusan akun Momen melalui email ke tim dukungan di support@momen.co.',
     alternates: { canonical: '/delete-account' },
-    openGraph: { ...base.openGraph, url: '/delete-account', title: 'Hapus Akun | momen.' },
+    openGraph: { ...base.openGraph, url: '/delete-account', title: 'Penutupan Akun | momen.' },
     twitter: base.twitter,
   },
   business: {

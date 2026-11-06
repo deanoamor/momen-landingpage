@@ -5,7 +5,7 @@ export default function Konten() {
         <div style={{"maxWidth": "800px", "margin": "0 auto"}}>
           <div style={{"display": "flex", "flexDirection": "column", "alignItems": "center", "textAlign": "center"}}>
             <span style={{"display": "inline-flex", "padding": "7px 16px", "borderRadius": "999px", "border": "1px solid #E5E6E6", "background": "#fff", "fontSize": "16px", "fontWeight": "500", "color": "#123C35"}}>Bantuan Akun</span>
-            <h1 id="da-h" style={{"margin": "24px 0 0", "fontSize": "clamp(36px,4.2vw,60px)", "lineHeight": "1.15", "fontWeight": "400", "letterSpacing": "-0.015em", "color": "#242E2C", "textWrap": "balance"}}>Hapus <span style={{"color": "#1E4841", "fontWeight": "500"}}>Akun</span></h1>
+            <h1 id="da-h" style={{"margin": "24px 0 0", "fontSize": "clamp(36px,4.2vw,60px)", "lineHeight": "1.15", "fontWeight": "400", "letterSpacing": "-0.015em", "color": "#242E2C", "textWrap": "balance"}}>Penutupan <span style={{"color": "#1E4841", "fontWeight": "500"}}>Akun</span></h1>
             <p style={{"margin": "20px 0 0", "maxWidth": "30em", "fontSize": "18px", "lineHeight": "1.6", "color": "#565656"}}>Jika Anda ingin menghapus akun Momen Anda, silakan ajukan permintaan melalui email ke tim dukungan kami. Tidak ada formulir penghapusan akun di halaman ini.</p>
           </div>
           <article className="lx-doc" aria-label="Cara menghapus akun" style={{"marginTop": "clamp(40px,5vw,64px)"}}>
