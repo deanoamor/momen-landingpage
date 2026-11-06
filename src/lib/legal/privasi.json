@@ -1,0 +1,460 @@
+{
+ "title": "Kebijakan Privasi",
+ "date": "25 Juli 2026",
+ "toc": [
+  [
+   "bab-i",
+   "Bab I: Definisi"
+  ],
+  [
+   "bab-ii",
+   "Bab II: Peran Perlindungan Data (Data Roles)"
+  ],
+  [
+   "bab-iii",
+   "Bab III: Jenis Data Pribadi yang Diproses"
+  ],
+  [
+   "bab-iv",
+   "Bab IV: Tujuan dan Dasar Hukum Pemrosesan Data"
+  ],
+  [
+   "bab-v",
+   "Bab V: Pengungkapan dan Berbagi Data kepada Pihak Ketiga"
+  ],
+  [
+   "bab-vi",
+   "Bab VI: Transfer Data Lintas Negara (Cross-Border Transfer)"
+  ],
+  [
+   "bab-vii",
+   "Bab VII: Masa Retensi dan Penghapusan Data"
+  ],
+  [
+   "bab-viii",
+   "Bab VIII: Keamanan Data Pribadi dan Pemberitahuan Insiden"
+  ],
+  [
+   "bab-ix",
+   "Bab IX: Hak-Hak Subjek Data Pribadi"
+  ],
+  [
+   "bab-x",
+   "Bab X: Perubahan Kebijakan Privasi"
+  ],
+  [
+   "bab-xi",
+   "Bab XI: Kontak dan Data Protection Officer (DPO)"
+  ]
+ ],
+ "blocks": [
+  {
+   "t": "p",
+   "text": "PT MOMEN INOVASI BERSAMA (\"Kami\" atau \"MOMEN\") berkomitmen penuh untuk melindungi dan menghormati privasi serta Data Pribadi Pengguna dan Akun Bisnis yang mengakses, mendaftar, atau menggunakan platform software-as-a-service (SaaS) Cash Management MOMEN (\"Platform\")."
+  },
+  {
+   "t": "p",
+   "text": "Kebijakan Privasi ini (\"Kebijakan\") menjelaskan bagaimana Kami mengumpulkan, menggunakan, mengolah, menganalisis, menyimpan, mengungkapkan, mengalihkan, melindungi, dan menghapus Data Pribadi Anda sehubungan dengan penggunaan Layanan MOMEN."
+  },
+  {
+   "t": "callout",
+   "text": "DENGAN MENGAKSES PLATFORM, MENYELESAIKAN PROSES PENDAFTARAN, MENGUNGGAH DOKUMEN KYB/KYC, ATAU MENCENTANG KOTAK PERSETUJUAN ELEKTRONIK, ANDA MENYATAKAN TEGAS BAHWA ANDA TELAH MEMBACA, MEMAHAMI, DAN MENYETUJUI SELURUH KETENTUAN DALAM KEBIJAKAN PRIVASI INI SERTA SYARAT DAN KETENTUAN LAYANAN MOMEN (MASTER AGREEMENT)."
+  },
+  {
+   "t": "h2",
+   "id": "bab-i",
+   "text": "Bab I: Definisi"
+  },
+  {
+   "t": "p",
+   "text": "Kecuali didefinisikan secara khusus di bawah ini, seluruh istilah berhuruf kapital dalam Kebijakan ini memiliki arti yang sama dengan yang tercantum dalam Syarat dan Ketentuan Layanan MOMEN (Master Agreement)."
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "text": "Data Pribadi adalah data tentang orang perseorangan yang teridentifikasi atau dapat diidentifikasi secara tersendiri atau dikombinasikan dengan informasi lainnya baik secara langsung maupun tidak langsung melalui sistem elektronik atau non-elektronik."
+    },
+    {
+     "text": "Subjek Data Pribadi adalah orang perseorangan yang pada dirinya melekat Data Pribadi, termasuk namun tidak terbatas pada Pengguna (User), Direktur/Penanggung Jawab Akun Bisnis, Pengguna Tambahan (Sub-Users), dan pelanggan/pihak ketiga yang datanya dimasukkan ke dalam Platform."
+    },
+    {
+     "text": "Pengendali Data Pribadi (Data Controller) adalah setiap orang, badan publik, atau organisasi internasional yang bertindak sendiri-sendiri atau bersama-sama dalam menentukan tujuan dan melakukan kendali pemrosesan Data Pribadi."
+    },
+    {
+     "text": "Pemroses Data Pribadi (Data Processor) adalah setiap orang, badan publik, atau organisasi internasional yang bertindak sendiri-sendiri atau bersama-sama dalam melakukan pemrosesan Data Pribadi atas nama Pengendali Data Pribadi."
+    },
+    {
+     "text": "Akun Bisnis (Company Account) adalah profil entitas bisnis (badan hukum PT/CV/Lembaga maupun bisnis perorangan/freelance) yang terdaftar di Platform MOMEN."
+    },
+    {
+     "text": "Pengguna (User) adalah individu perorangan yang memiliki akun dan kredensial akses pada Platform MOMEN."
+    },
+    {
+     "text": "Partner adalah bank, Penyelenggara Jasa Pembayaran (PJP Kat 1/2/3), payment gateway, penyedia verifikasi identitas (e-KYC), penyedia infrastruktur cloud, dan mitra teknologi terintegrasi yang bekerja sama dengan MOMEN."
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "id": "bab-ii",
+   "text": "Bab II: Peran Perlindungan Data (Data Roles)"
+  },
+  {
+   "t": "p",
+   "text": "Sesuai dengan ketentuan Undang-Undang Pelindungan Data Pribadi (UU PDP):"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "label": "Akun Bisnis sebagai Pengendali Data (Data Controller)",
+     "text": "Akun Bisnis bertindak sebagai Pengendali Data atas Data Pribadi karyawan, Pengguna Tambahan (Sub-Users), Direksi, maupun data pelanggan/penerima dana (beneficiary) yang diunggah, diinput, atau diintegrasikan ke dalam Platform MOMEN. Akun Bisnis bertanggung jawab penuh untuk memastikan tersedianya dasar hukum (legal basis) dan persetujuan (consent) yang sah dari Subjek Data tersebut."
+    },
+    {
+     "label": "MOMEN sebagai Pemroses Data (Data Processor)",
+     "text": "MOMEN bertindak sebagai Pemroses Data yang memproses Data Pribadi tersebut atas nama, sesuai instruksi, dan untuk kepentingan penyediaan Layanan Cash Management bagi Akun Bisnis."
+    },
+    {
+     "label": "MOMEN sebagai Pengendali Data (Data Controller)",
+     "text": "MOMEN bertindak sebagai Pengendali Data khusus atas Data Pribadi yang dikumpulkan secara langsung dari individu Pengguna untuk kepentingan pembuatan akun pendaftaran login, otentikasi keamanan, verifikasi KYC individu, serta pemenuhan kewajiban regulasi Anti-Pencucian Uang (APU-PPT)."
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "id": "bab-iii",
+   "text": "Bab III: Jenis Data Pribadi yang Diproses"
+  },
+  {
+   "t": "p",
+   "text": "Kami memproses berbagai kategori Data Pribadi guna menunjang operasional Platform Cash Management, antara lain:"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "label": "Data Identitas Diri & Verifikasi (KYC/KYB)",
+     "text": "",
+     "sub": [
+      {
+       "text": "Nama lengkap, Nomor Induk Kependudukan (NIK/KTP), Passport, Nomor Pokok Wajib Pajak (NPWP);"
+      },
+      {
+       "text": "Foto identitas resmi dan foto swafoto (selfie/liveness test);"
+      },
+      {
+       "text": "Tanggal lahir, tempat lahir, jenis kelamin, dan kewarganegaraan;"
+      },
+      {
+       "text": "Dokumen legalitas badan usaha yang memuat data pengurus/pemilik manfaat (Beneficial Owner), seperti Akta Pendirian/Perubahan dan SK Kemenkumham."
+      }
+     ]
+    },
+    {
+     "label": "Data Kontak & Akun",
+     "text": "",
+     "sub": [
+      {
+       "text": "Alamat email (termasuk domain korporat), nomor telepon/WhatsApp;"
+      },
+      {
+       "text": "Alamat tempat tinggal / alamat domisili usaha;"
+      },
+      {
+       "text": "Kredensial akun (nama pengguna, kata sandi terenkripsi, PIN transaksi, dan status otorisasi peran/akses)."
+      }
+     ]
+    },
+    {
+     "label": "Data Keuangan & Transaksi (Cash Management Data)",
+     "text": "",
+     "sub": [
+      {
+       "text": "Nomor rekening bank tujuan, nama pemilik rekening, nama bank penerima/pengirim;"
+      },
+      {
+       "text": "Rincian instruksi transfer, Virtual Account (VA), QRIS, transaksi kartu, dan e-wallet;"
+      },
+      {
+       "text": "Catatan Available Balance, histori pencairan (disbursement), histori penerimaan (money-in), serta log settlement;"
+      },
+      {
+       "text": "Informasi biaya transaksi (fee), MDR, dan status pembayaran paket berlangganan."
+      }
+     ]
+    },
+    {
+     "label": "Data Teknis, Perangkat, & Audit Log",
+     "text": "",
+     "sub": [
+      {
+       "text": "Alamat IP (IP Address), data lokasi geofencing;"
+      },
+      {
+       "text": "Jenis perangkat (device ID), sistem operasi, jenis peramban (browser);"
+      },
+      {
+       "text": "Stempel waktu (timestamp), log aktivitas otorisasi transaksi (Maker/Approver/Releaser), dan Audit Log tindakan Pengguna di Dashboard."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "id": "bab-iv",
+   "text": "Bab IV: Tujuan dan Dasar Hukum Pemrosesan Data"
+  },
+  {
+   "t": "h3",
+   "id": "tujuan-pemrosesan-data",
+   "text": "1. Tujuan Pemrosesan Data"
+  },
+  {
+   "t": "p",
+   "text": "MOMEN memproses Data Pribadi untuk tujuan-tujuan berikut:"
+  },
+  {
+   "t": "ul",
+   "start": 1,
+   "items": [
+    {
+     "text": "Menyediakan, mengoperasikan, dan memelihara fitur Cash Management (penerimaan dana, pembuatan Virtual Account, QRIS, dan transfer dana BI-FAST/E-wallet);"
+    },
+    {
+     "text": "Melaksanakan verifikasi identitas (KYC) Pengguna/Direktur dan verifikasi entitas bisnis (KYB) Akun Bisnis;"
+    },
+    {
+     "text": "Mengelola struktur hak akses Multi-Company dan matriks otorisasi transaksi (Maker-Approver-Releaser);"
+    },
+    {
+     "text": "Menjalankan proses rekonsiliasi data, settlement, investigasi dispute, serta penanganan fraud;"
+    },
+    {
+     "text": "Memenuhi kewajiban hukum, regulasi Bank Indonesia, OJK, PPATK, dan perpajakan (termasuk kepatuhan APU-PPT-PPPSPM);"
+    },
+    {
+     "text": "Mengirimkan notifikasi transaksi, email konfirmasi, laporan bulanan, dan pembaruan Layanan;"
+    },
+    {
+     "text": "Menjaga keamanan jaringan, pemulihan sistem (disaster recovery), serta pengembangan kualitas Platform."
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "id": "dasar-hukum-pemrosesan-legal-basis",
+   "text": "2. Dasar Hukum Pemrosesan (Legal Basis)"
+  },
+  {
+   "t": "p",
+   "text": "Pemrosesan Data Pribadi dilakukan berdasarkan satu atau lebih dasar hukum berikut:"
+  },
+  {
+   "t": "ul",
+   "start": 1,
+   "items": [
+    {
+     "label": "Persetujuan (Consent)",
+     "text": "Persetujuan eksplisit dari Anda saat mendaftar dan menyetujui Kebijakan ini;"
+    },
+    {
+     "label": "Pelaksanaan Perjanjian (Contractual Necessity)",
+     "text": "Pemrosesan diperlukan untuk melaksanakan hak dan kewajiban berdasarkan Master Agreement MOMEN;"
+    },
+    {
+     "label": "Kewajiban Hukum (Legal Obligation)",
+     "text": "Pemrosesan diwajibkan oleh peraturan perundang-undangan Republik Indonesia;"
+    },
+    {
+     "label": "Kepentingan Sah yang Patut (Legitimate Interest)",
+     "text": "Untuk mitigasi risiko keamanan siber, pencegahan penipuan (anti-fraud), serta perlindungan operasional Platform."
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "id": "bab-v",
+   "text": "Bab V: Pengungkapan dan Berbagi Data kepada Pihak Ketiga"
+  },
+  {
+   "t": "p",
+   "text": "MOMEN tidak menjual atau menyewakan Data Pribadi Anda kepada pihak manapun. Namun, untuk menyelenggarakan Layanan Cash Management, Anda memberikan persetujuan tegas kepada MOMEN untuk membagikan Data Pribadi kepada pihak-pihak berikut (termasuk namun tidak terbatas pada):"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "label": "Partner Penyelenggara Jasa Pembayaran & Perbankan",
+     "text": "Bank mitra, PJP Kat 1/2/3, payment gateway, dan penyedia jaringan switching resmi yang terdaftar di Bank Indonesia untuk keperluan pemrosesan Virtual Account, QRIS, disbursement, dan penampungan dana (custody/escrow)."
+    },
+    {
+     "label": "Penyedia Layanan Verifikasi Identitas (e-KYC/KYB)",
+     "text": "Mitra penyedia otentikasi data kependudukan dan liveness test untuk memvalidasi keabsahan data Pengguna dan Direksi."
+    },
+    {
+     "label": "Penyedia Infrastruktur Komputasi Awan (Cloud Infrastructure)",
+     "text": "Penyedia hosting, basis data, dan jaringan cloud (seperti AWS, Google Cloud, atau Microsoft Azure) yang menerapkan standar keamanan internasional."
+    },
+    {
+     "label": "Otoritas Regulator & Aparat Penegak Hukum",
+     "text": "Bank Indonesia, Otoritas Jasa Keuangan (OJK), Pusat Pelaporan dan Analisis Transaksi Keuangan (PPATK), Kepolisian, Kejaksaan, atau Pengadilan berdasarkan Perintah Resmi / Instruksi Hukum yang sah."
+    },
+    {
+     "label": "Konsultan Profesional",
+     "text": "Auditor, penasihat hukum (legal counsel), dan konsultan pajak yang terikat pada kewajiban kerahasiaan (confidentiality)."
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "id": "bab-vi",
+   "text": "Bab VI: Transfer Data Lintas Negara (Cross-Border Transfer)"
+  },
+  {
+   "t": "p",
+   "text": "Dalam rangka penyediaan infrastruktur cloud yang aman, andal, dan berkinerja tinggi, Data Pribadi Anda dapat diproses, ditransmisikan, atau disimpan pada server penyedia jasa cloud mitra MOMEN yang berlokasi di luar wilayah Republik Indonesia."
+  },
+  {
+   "t": "p",
+   "text": "MOMEN menjamin bahwa seluruh pengiriman Data Pribadi lintas negara dilaksanakan sesuai dengan ketentuan UU PDP No. 27 Tahun 2022, dengan memastikan bahwa negara atau mitra penerima data memiliki standar pelindungan data pribadi yang setara atau lebih tinggi, serta terikat pada perjanjian pemrosesan data (Data Processing Agreement) yang ketat."
+  },
+  {
+   "t": "h2",
+   "id": "bab-vii",
+   "text": "Bab VII: Masa Retensi dan Penghapusan Data"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "label": "Masa Retensi Data Transaksi & Audit Log",
+     "text": "Berdasarkan ketentuan hukum perbankan, peraturan Bank Indonesia mengenai APU-PPT, dan PKS Kemitraan, MOMEN dan Partner wajib menyimpan dan memelihara Data Pribadi, data identitas (KYC/KYB), data transaksi keuangan, serta Audit Log paling singkat selama 5 (lima) tahun sejak transaksi dilakukan atau sejak hubungan usaha diakhiri."
+    },
+    {
+     "label": "Penghapusan dan Anonimisasi Data",
+     "text": "Setelah masa retensi hukum yang dipersyaratkan berakhir dan Data Pribadi tidak lagi diperlukan untuk tujuan penyediaan Layanan atau penyelesaian sengketa, MOMEN akan menghapus, memusnahkan, atau menganonimkan Data Pribadi tersebut dari sistem elektronik MOMEN sesuai dengan standar teknis keamanan data."
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "id": "bab-viii",
+   "text": "Bab VIII: Keamanan Data Pribadi dan Pemberitahuan Insiden"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "label": "Langkah-Langkah Keamanan",
+     "text": "MOMEN menerapkan standar keamanan teknis dan organisasional yang memadai untuk melindungi Data Pribadi dari akses tidak sah, kebocoran, pengubahan, pemusnahan, atau kehilangan, termasuk:",
+     "sub": [
+      {
+       "text": "Enkripsi data saat ditransmisikan (data in transit menggunakan SSL/TLS) dan saat disimpan (data at rest menggunakan enkripsi standar AES-256);"
+      },
+      {
+       "text": "Kontrol akses berbasis peran (Role-Based Access Control / RBAC) dan otentikasi berlapis;"
+      },
+      {
+       "text": "Pemantauan keamanan siber dan pemeliharaan firewall secara berkala."
+      }
+     ]
+    },
+    {
+     "label": "Notifikasi Insiden Kebocoran Data (Data Breach Notification)",
+     "text": "Apabila terjadi kegagalan pelindungan Data Pribadi / kebocoran data yang menimbulkan risiko terbukanya Data Pribadi ke pihak yang tidak berwenang, MOMEN akan menyampaikan pemberitahuan tertulis kepada Subjek Data yang terdampak dan Lembaga Pelindungan Data Pribadi / Otoritas Berwenang selambat-lambatnya 3 x 24 (tiga kali dua puluh empat) jam sejak insiden tersebut terkonfirmasi, sesuai dengan ketentuan UU PDP."
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "id": "bab-ix",
+   "text": "Bab IX: Hak-Hak Subjek Data Pribadi"
+  },
+  {
+   "t": "p",
+   "text": "Sesuai dengan Undang-Undang Pelindungan Data Pribadi, Anda sebagai Subjek Data memiliki hak-hak berikut:"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "label": "Hak Akses & Salinan",
+     "text": "Hak untuk mendapatkan informasi mengenai kejelasan identitas, dasar kepentingan hukum, dan meminta salinan Data Pribadi Anda yang diproses di Platform."
+    },
+    {
+     "label": "Hak Perbaikan & Pembaruan",
+     "text": "Hak untuk melengkapi, memperbarui, dan/atau memperbaiki kesalahan Data Pribadi Anda jika terdapat ketidakakuratan."
+    },
+    {
+     "label": "Hak Penarikan Persetujuan",
+     "text": "Hak untuk menarik kembali persetujuan pemrosesan Data Pribadi yang telah Anda berikan kepada MOMEN (penarikan persetujuan ini dapat mengakibatkan tidak dapat diaksesnya sebagian atau seluruh Layanan Cash Management MOMEN)."
+    },
+    {
+     "label": "Hak Penghapusan / Pemusnahan",
+     "text": "Hak untuk meminta penghapusan Data Pribadi Anda, sepanjang tidak bertentangan dengan kewajiban retensi data 5 (lima) tahun berdasarkan hukum perbankan/APU-PPT yang mengikat MOMEN."
+    },
+    {
+     "label": "Hak Pengaduan",
+     "text": "Hak untuk mengajukan pengaduan atas dugaan pelanggaran pemrosesan Data Pribadi kepada Lembaga Pelindungan Data Pribadi / Otoritas Berwenang."
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Untuk melaksanakan hak-hak tersebut, Anda dapat mengirimkan permohonan resmi secara tertulis ke kontak Data Protection Officer (DPO) MOMEN yang tertera pada Bab XI Kebijakan ini."
+  },
+  {
+   "t": "h2",
+   "id": "bab-x",
+   "text": "Bab X: Perubahan Kebijakan Privasi"
+  },
+  {
+   "t": "p",
+   "text": "MOMEN berhak untuk mengubah, memperbarui, atau meredaksi Kebijakan Privasi ini dari waktu ke waktu guna menyesuaikan dengan perkembangan teknologi, praktik bisnis, atau regulasi hukum yang berlaku."
+  },
+  {
+   "t": "p",
+   "text": "Pembaruan atas Kebijakan ini akan diinformasikan secara elektronik melalui publikasi di Platform, Dashboard, atau melalui email resmi sekurang-kurangnya 14 (empat belas) hari kalender sebelum tanggal pemberlakuan efektif. Keberlanjutan penggunaan Platform setelah tanggal efektif perubahan mengindikasikan persetujuan penuh Anda terhadap Kebijakan Privasi yang telah diperbarui."
+  },
+  {
+   "t": "h2",
+   "id": "bab-xi",
+   "text": "Bab XI: Kontak dan Data Protection Officer (DPO)"
+  },
+  {
+   "t": "p",
+   "text": "Jika Anda memiliki pertanyaan, keluhan, pengaduan, atau ingin melaksanakan Hak Subjek Data terkait pengolahan Data Pribadi Anda di Platform MOMEN, silahkan hubungi tim Pelindungan Data Pribadi Kami melalui:"
+  },
+  {
+   "t": "ul",
+   "start": 1,
+   "items": [
+    {
+     "label": "Nama Entitas",
+     "text": "PT MOMEN INOVASI BERSAMA"
+    },
+    {
+     "label": "Petugas DPO / Privacy Team",
+     "text": "Data Protection Officer MOMEN"
+    },
+    {
+     "label": "Email Resmi",
+     "text": "privacy@momen.co"
+    },
+    {
+     "label": "Alamat Surat-Menyurat",
+     "text": "Next Office, Menara Palma Lantai 15 Unit 03, Jl. H.R. Rasuna Said Kavling VI No. 9 Blok X2, Kel. Kuningan Timur, Kec. Setiabudi, Kota Adm. Jakarta Selatan, DKI Jakarta 12950."
+    }
+   ]
+  }
+ ]
+}

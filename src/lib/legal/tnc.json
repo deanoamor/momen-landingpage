@@ -1,0 +1,752 @@
+{
+ "title": "Syarat & Ketentuan",
+ "date": "25 Juli 2026",
+ "toc": [
+  [
+   "ringkasan",
+   "Ringkasan Poin Utama"
+  ],
+  [
+   "bab-i",
+   "Bab I: Definisi dan Model Kemitraan"
+  ],
+  [
+   "bab-ii",
+   "Bab II: Struktur Akun, Hubungan Multi-Company, Verifikasi (KYB/KYC), dan Akun Dormant"
+  ],
+  [
+   "bab-iii",
+   "Bab III: Operasional Transaksi, Rekonsiliasi, dan Dispute"
+  ],
+  [
+   "bab-iv",
+   "Bab IV: Kepatuhan APU-PPT, Pencegahan Fraud, dan Pembekuan Akun"
+  ],
+  [
+   "bab-v",
+   "Bab V: Batasan Tanggung Jawab dan Ganti Rugi"
+  ],
+  [
+   "bab-vi",
+   "Bab VI: Kerahasiaan, Hak Cipta, dan Pelindungan Data"
+  ],
+  [
+   "bab-vii",
+   "Bab VII: Hukum yang Mengatur dan Penyelesaian Sengketa"
+  ],
+  [
+   "bab-viii",
+   "Bab VIII: Pemberitahuan Resmi, Penutup, dan Pembaruan"
+  ]
+ ],
+ "blocks": [
+  {
+   "t": "h2",
+   "id": "ringkasan",
+   "text": "Ringkasan Poin Utama (Executive Summary)"
+  },
+  {
+   "t": "p",
+   "text": "Dokumen ini merupakan perjanjian hukum yang sah dan mengikat antara Anda/Entitas yang Anda wakili dengan PT MOMEN INOVASI BERSAMA. Ringkasan di bawah ini disediakan untuk mempermudah pemahaman awal dan tidak mengurangi, mengubah, atau menggantikan ketentuan hukum lengkap yang tercantum dalam pasal-pasal Perjanjian ini."
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "label": "Status Kedudukan MOMEN",
+     "text": "MOMEN adalah penyedia platform teknologi Software-as-a-Service (SaaS) Cash Management dan bukan merupakan bank, lembaga keuangan non-bank, atau Penyelenggara Jasa Pembayaran (PJP) penampung dana faktual."
+    },
+    {
+     "label": "Penguasaan dan Pengelolaan Dana",
+     "text": "Seluruh penampungan dana faktual dan eksekusi transaksi keuangan dilakukan langsung oleh Partner (Bank/PJP) yang berizin dan diawasi oleh Bank Indonesia (BI) dan/atau Otoritas Jasa Keuangan (OJK). Saldo yang tertera pada Dashboard (Available Balance) merupakan pencatatan saldo virtual (virtual ledger)."
+    },
+    {
+     "label": "Persyaratan Verifikasi Legalitas (KYB/KYC)",
+     "text": "Setiap Akun Bisnis wajib menyelesaikan verifikasi legalitas badan usaha (Know Your Business / KYB) serta verifikasi identitas (Know Your Customer / KYC) bagi Direktur dan Pengguna yang memiliki wewenang otorisasi keuangan (Approver dan Releaser)."
+    },
+    {
+     "label": "Operasional Transaksi, Rekonsiliasi, & Chargeback",
+     "text": "Pemrosesan transaksi pengeluaran dana murni bersumber dari Available Balance tanpa mekanisme dana talangan (no bailout). Batas waktu pengajuan sanggahan atas selisih pencatatan transaksi (rekonsiliasi) ditetapkan selambat-lambatnya H+3 (tiga) Hari Kerja. Dalam hal terjadi chargeback atau reversal, MOMEN berhak memotong saldo atau membebankan pelunasan kewajiban kepada Akun Bisnis."
+    },
+    {
+     "label": "Keamanan Akun, Penangguhan, & Mandat Regulasi",
+     "text": "Demi menjaga keamanan Platform serta kepatuhan regulasi (APU-PPT), penangguhan sementara atas akses fitur atau transaksi dapat dilakukan oleh Partner berizin atau MOMEN apabila terdapat indikasi aktivitas mencurigakan, sengketa internal entitas, atau berdasarkan instruksi resmi dari otoritas berwenang (BI/OJK/PPATK)."
+    },
+    {
+     "label": "Kebijakan Paket Langganan & Pengembalian Dana (Refund)",
+     "text": "Seluruh biaya langganan paket (subscription fee) dan biaya pemrosesan transaksi (transaction fee) bersifat final dan tidak dapat dikembalikan (non-refundable)."
+    },
+    {
+     "label": "Alamat Komunikasi Resmi & Yurisdiksi",
+     "text": "Alamat email Admin Utama (Owner) diakui sebagai alamat korespondensi hukum resmi. Setiap sengketa yang tidak dapat diselesaikan melalui musyawarah akan diselesaikan melalui Pengadilan Negeri Jakarta Selatan."
+    }
+   ]
+  },
+  {
+   "t": "callout",
+   "text": "PERJANJIAN SYARAT DAN KETENTUAN LAYANAN INI (\"PERJANJIAN\") MERUPAKAN KESEPAKATAN HUKUM BERBASIS ELEKTRONIK YANG SAH DAN MENGIKAT ANTARA PT MOMEN INOVASI BERSAMA (\"MOMEN\") DAN PENGGUNA INDIVIDU MAUPUN ENTITAS BISNIS YANG MENDAFTAR, MENGAKSES, ATAU MENGGUNAKAN LAYANAN (\"PENGGUNA\" DAN/ATAU \"AKUN BISNIS\")."
+  },
+  {
+   "t": "callout",
+   "text": "DENGAN MENYELESAIKAN PROSES PENDAFTARAN, MENCENTANG KOTAK PERSETUJUAN ELEKTRONIK, ATAU MENGGUNAKAN PLATFORM MOMEN, PENGGUNA DAN/ATAU AKUN BISNIS MENYATAKAN TELAH MEMBACA, MEMAHAMI, DAN MENYETUJUI UNTUK TERIKAT PADA SELURUH KETENTUAN DALAM PERJANJIAN INI SERTA KEBIJAKAN PRIVASI MOMEN. JIKA PENGGUNA ATAU AKUN BISNIS TIDAK MENYETUJUI SEBAGIAN ATAU SELURUH KETENTUAN INI, DILARANG MENGAKSES DAN/ATAU MENGGUNAKAN PLATFORM MOMEN."
+  },
+  {
+   "t": "h2",
+   "id": "bab-i",
+   "text": "Bab I: Definisi dan Model Kemitraan"
+  },
+  {
+   "t": "h3",
+   "id": "pasal-1",
+   "text": "Pasal 1 – Definisi"
+  },
+  {
+   "t": "p",
+   "text": "Dalam Perjanjian ini, kecuali konteksnya menentukan lain, istilah-istilah berhuruf kapital berikut memiliki arti sebagai berikut:"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "text": "MOMEN adalah platform teknologi berbasis Software-as-a-Service (SaaS) Cash Management yang dimiliki, dikembangkan, dan dikelola secara sah oleh PT MOMEN INOVASI BERSAMA."
+    },
+    {
+     "text": "Pengguna (User) adalah setiap individu perorangan yang terdaftar dan memiliki kredensial akun pribadi untuk mengakses atau mengoperasikan Platform MOMEN."
+    },
+    {
+     "text": "Akun Bisnis (Company Account) adalah profil entitas bisnis—baik berupa badan hukum (Perseroan Terbatas, Persekutuan Komanditer, Yayasan) maupun bisnis perorangan—yang didaftarkan dan dikelola dalam Platform MOMEN."
+    },
+    {
+     "text": "Partner adalah bank, Penyelenggara Jasa Pembayaran (PJP Kategori 1, 2, atau 3), payment gateway, penyedia verifikasi identitas (e-KYC), penyedia infrastruktur komputasi awan (cloud), atau mitra teknologi berizin yang bekerja sama dengan MOMEN untuk menunjang operasional Layanan."
+    },
+    {
+     "text": "Dashboard adalah antarmuka digital yang disediakan oleh MOMEN untuk diakses oleh Pengguna guna mengelola Akun Bisnis, memantau transaksi, serta mengonfigurasi fitur Layanan."
+    },
+    {
+     "text": "Available Balance adalah pencatatan saldo virtual (virtual ledger) atas dana hasil Transaksi Berhasil yang telah diselesaikan (settled), tercatat dalam sistem MOMEN, dan tersedia untuk dilakukan pencairan (disbursement) atau transaksi setelah dikurangi biaya layanan. Saldo ini merepresentasikan dana yang ditampung secara sah pada rekening penampungan (escrow/custody account) milik Partner berizin, dan BUKAN merupakan dana yang disimpan di dalam rekening operasional MOMEN."
+    },
+    {
+     "text": "Audit Log adalah rekam jejak elektronik pada sistem basis data MOMEN yang merekam aktivitas operasional Pengguna, hak otorisasi, stempel waktu (timestamp), alamat IP, dan histori transaksi."
+    },
+    {
+     "text": "Kebijakan Privasi adalah dokumen terpisah yang mengatur tata cara pengumpulan, pemrosesan, penyimpanan, pengungkapan, pelindungan, dan penghapusan Data Pribadi oleh MOMEN."
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "id": "pasal-2",
+   "text": "Pasal 2 – Penegasan Kedudukan Hukum MOMEN & Model Kemitraan"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "label": "Penegasan Kedudukan Non-Bank",
+     "text": "MOMEN BUKAN MERUPAKAN BANK, LEMBAGA KEUANGAN NON-BANK, ATAU PENYELENGGARA JASA PEMBAYARAN LANGSUNG, DAN TIDAK BERTINDAK SEBAGAI PENAMPUNG DANA FAKTUAL. MOMEN bertindak murni sebagai penyedia platform teknologi (software orchestrator & cash management tool)."
+    },
+    {
+     "label": "Peran Partner Berizin",
+     "text": "Seluruh eksekusi transaksi keuangan riil—termasuk penampungan dana faktual, penerbitan Virtual Account (VA), akseptasi QRIS, pemrosesan kartu, dan transfer dana (disbursement via BI-FAST, E-wallet, atau Kliring)—diselenggarakan secara langsung oleh Partner yang memiliki izin resmi dari Bank Indonesia (BI) dan/atau Otoritas Jasa Keuangan (OJK)."
+    },
+    {
+     "label": "Inkorporasi Fitur dan Tarif (Incorporation by Reference)",
+     "text": "",
+     "sub": [
+      {
+       "text": "Rincian fitur, batas kuota transaksi, jadwal penyelesaian (settlement), serta struktur biaya (subscription fee, transaction fee, MDR) ditetapkan secara spesifik sesuai dengan informasi yang tercantum pada Dashboard Akun Bisnis."
+      },
+      {
+       "text": "Informasi biaya dan fitur pada Dashboard merupakan bagian yang berkedudukan hukum sama dan tidak terpisahkan dari Perjanjian ini."
+      },
+      {
+       "text": "MOMEN berhak memperbarui fitur dan tarif layanan dari waktu ke waktu dengan pemberitahuan elektronik sekurang-kurangnya 7 (tujuh) hari kalender sebelum tanggal pemberlakuan efektif."
+      }
+     ]
+    },
+    {
+     "label": "Kebijakan Langganan dan Pengembalian Dana (Refund Policy)",
+     "text": "",
+     "sub": [
+      {
+       "text": "Seluruh biaya langganan paket dan biaya pemrosesan transaksi yang telah dibayarkan oleh Akun Bisnis bersifat final dan tidak dapat dikembalikan (non-refundable)."
+      },
+      {
+       "text": "Dalam hal Akun Bisnis melakukan pembatalan paket berlangganan sebelum masa berlaku berakhir, pembatalan akan efektif pada akhir periode penagihan berjalan dan Akun Bisnis tetap dapat mengakses fitur hingga periode tersebut berakhir."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "id": "bab-ii",
+   "text": "Bab II: Struktur Akun, Hubungan Multi-Company, Verifikasi (KYB/KYC), dan Akun Dormant"
+  },
+  {
+   "t": "h3",
+   "id": "pasal-3",
+   "text": "Pasal 3 – Struktur Akun dan Hubungan Multi-Company"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "label": "Pemisahan Entitas Pengguna dan Akun Bisnis",
+     "text": "",
+     "sub": [
+      {
+       "text": "Identitas Pengguna (User) melekat pada individu perorangan."
+      },
+      {
+       "text": "Akun Bisnis (Company Account) merupakan entitas terpisah yang dimiliki oleh badan usaha atau pemilik bisnis perorangan."
+      }
+     ]
+    },
+    {
+     "label": "Akses Multi-Company",
+     "text": "1 (satu) Pengguna (User) dapat dihubungkan dan diberikan hak akses pada lebih dari 1 (satu) Akun Bisnis (multiple companies) secara bersamaan."
+    },
+    {
+     "label": "Keabsahan Otorisasi Kredensial",
+     "text": "Setiap transaksi, instruksi transfer, persetujuan, atau tindakan operasional yang diproses melalui Platform dengan menggunakan Kredensial Akun yang sah (termasuk namun tidak terbatas pada API Key, Kata Sandi, PIN, OTP, atau mekanisme autentikasi Role-Based Access Control) dianggap secara mutlak sebagai instruksi resmi, otentik, dan mengikat dari Akun Bisnis bersangkutan."
+    },
+    {
+     "label": "Tanggung Jawab Aktivitas Berdasarkan Konteks Bisnis",
+     "text": "Setiap tindakan, persetujuan, atau pengajuan transaksi yang dilakukan Pengguna di bawah Akun Bisnis tertentu secara hukum mengikat Akun Bisnis yang sedang diakses tersebut."
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "id": "pasal-4",
+   "text": "Pasal 4 – Proses Verifikasi KYB dan KYC"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "label": "Verifikasi Entitas Bisnis (Know Your Business / KYB)",
+     "text": "",
+     "sub": [
+      {
+       "label": "Akun Bisnis Badan Usaha (PT/CV/Yayasan)",
+       "text": "Wajib menyelesaikan verifikasi KYB dengan mengunggah dokumen legalitas (NIB, Akta Pendirian dan Perubahan Terakhir, NPWP Perusahaan, SK Kemenkumham, serta dokumen keterbukaan Pemilik Manfaat/Beneficial Ownership)."
+      },
+      {
+       "label": "Akun Bisnis Perorangan",
+       "text": "Wajib menyelesaikan verifikasi KYB Perorangan dengan mengunggah identitas diri serta dokumen pendukung kegiatan usaha (NIB Perorangan, NPWP, atau bukti operasional usaha)."
+      }
+     ]
+    },
+    {
+     "label": "Verifikasi Identitas Direksi (KYC Direktur)",
+     "text": "Direktur yang berwenang bertindak atas nama badan usaha sesuai Akta Pendirian/Perubahan wajib menyelesaikan verifikasi Know Your Customer (KYC) guna melengkapi keabsahan KYB Akun Bisnis."
+    },
+    {
+     "label": "Admin Utama (Owner)",
+     "text": "Setiap Akun Bisnis wajib menunjuk 1 (satu) Admin Utama (Owner) yang memegang kontrol penuh atas Akun Bisnis. Admin Utama wajib terverifikasi KYC secara penuh."
+    },
+    {
+     "label": "Pengguna Tambahan (Sub-Users) & Matriks Otorisasi",
+     "text": "",
+     "sub": [
+      {
+       "label": "Pengguna Tanpa Otorisasi Keuangan (Viewer, Maker, Auditor)",
+       "text": "Tidak diwajibkan melakukan KYC."
+      },
+      {
+       "label": "Pengguna Dengan Otorisasi Keuangan (Approver, Releaser, Signatory)",
+       "text": "Wajib menyelesaikan verifikasi KYC sebelum fitur otorisasi/eksekusi transaksi pada Akun Bisnis diaktifkan."
+      }
+     ]
+    },
+    {
+     "text": "Akun Bisnis bertanggung jawab penuh atas seluruh tindakan, kelalaian, atau penyalahgunaan yang dilakukan oleh Pengguna yang diberi hak akses di bawah Akun Bisnis bersangkutan."
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "id": "pasal-5",
+   "text": "Pasal 5 – Kebijakan Akun Tidak Aktif (Dormant Account)"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "label": "Kriteria Akun Dormant",
+     "text": "Akun Bisnis dikategorikan sebagai Akun Tidak Aktif (Dormant Account) apabila tidak mencatatkan aktivitas transaksi keuangan atau login Pengguna pada Platform selama 12 (dua belas) bulan berturut-turut."
+    },
+    {
+     "label": "Prosedur Pemberitahuan",
+     "text": "MOMEN akan menyampaikan pemberitahuan tertulis secara elektronik ke alamat email Admin Utama sekurang-kurangnya 30 (tiga puluh) hari kalender sebelum penetapan status Dormant."
+    },
+    {
+     "label": "Penanganan Saldo dan Penonaktifan",
+     "text": "",
+     "sub": [
+      {
+       "text": "Demi alasan keamanan, fitur transaksi pengeluaran dana (disbursement) dan penerimaan dana (money-in) pada Akun Dormant akan dinonaktifkan secara otomatis."
+      },
+      {
+       "text": "Apabila masih terdapat sisa Available Balance pada Akun Dormant, Akun Bisnis dapat mengajukan reaktivasi akun atau penarikan sisa saldo ke rekening bank terverifikasi atas nama Akun Bisnis melalui prosedur verifikasi ulang (re-KYB/KYC)."
+      },
+      {
+       "text": "MOMEN berhak membebankan biaya pemeliharaan akun tidak aktif (dormant maintenance fee) yang dipotong secara berkala dari Available Balance sesuai dengan tarif yang ditetapkan pada Platform hingga sisa saldo bernilai nol atau akun direaktivasi secara sah."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "id": "bab-iii",
+   "text": "Bab III: Operasional Transaksi, Rekonsiliasi, dan Dispute"
+  },
+  {
+   "t": "h3",
+   "id": "pasal-6",
+   "text": "Pasal 6 – Operasional Transaksi, Settlement, dan Chargeback"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "label": "Penerimaan Dana (Money-In)",
+     "text": "Transaksi penerimaan dana diproses oleh Partner sesuai jadwal settlement pada Dashboard. Dana hasil transaksi dicatatkan pada Available Balance setelah dipotong biaya layanan."
+    },
+    {
+     "label": "Pengeluaran Dana (Disbursement / Outbound)",
+     "text": "Transfer dana hanya dapat diproses apabila Available Balance mencukupi. Pemrosesan dilaksanakan murni bersumber dari Available Balance tanpa mekanisme dana talangan (no bailout) dari MOMEN maupun Partner."
+    },
+    {
+     "label": "Tanggung Jawab Input Data",
+     "text": "Akun Bisnis dan Pengguna menanggung seluruh risiko atas kesalahan input nomor rekening, nama penerima, nominal transfer, atau detail transaksi. MOMEN tidak berkewajiban melakukan penarikan kembali (recall) atas kesalahan instruksi Pengguna."
+    },
+    {
+     "label": "Ketentuan Chargeback dan Reversal",
+     "text": "",
+     "sub": [
+      {
+       "text": "Dalam hal Partner, pihak penerbit (issuer), atau penyelenggara jaringan pembayaran melakukan pembalikan transaksi (reversal) atau penagihan kembali (chargeback) atas transaksi penerimaan dana (money-in) akibat indikasi fraud, transaksi tidak sah, peretasan, atau instruksi resmi regulator/sistem pembayaran:"
+      },
+      {
+       "text": "MOMEN berhak memotong langsung (deduct) nilai chargeback atau reversal tersebut beserta biaya administrasi yang timbul dari Available Balance Akun Bisnis yang bersangkutan."
+      },
+      {
+       "text": "Apabila Available Balance Akun Bisnis tidak mencukupi untuk menutup nilai chargeback atau reversal tersebut (sehingga menyebabkan posisi saldo negatif), Akun Bisnis wajib melunasi kewajiban pembayaran selisih tersebut selambat-lambatnya dalam waktu 7 (tujuh) Hari Kerja sejak pemberitahuan tertulis dikirimkan oleh MOMEN."
+      },
+      {
+       "text": "Terhadap keterlambatan pelunasan, MOMEN berhak menangguhkan seluruh fitur Layanan, membekukan akun, serta melakukan tindakan hukum pemulihan hak sesuai ketentuan yang berlaku."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "id": "pasal-7",
+   "text": "Pasal 7 – Rekonsiliasi Data Transaksi dan Dispute"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "label": "Keabsahan Data Sistem",
+     "text": "Data transaksi yang tercatat dalam sistem MOMEN dan/atau Partner merupakan data yang sah, otentik, dan mengikat para pihak."
+    },
+    {
+     "label": "Batas Waktu Rekonsiliasi",
+     "text": "",
+     "sub": [
+      {
+       "text": "Akun Bisnis wajib melakukan pemeriksaan kesesuaian data transaksi secara berkala."
+      },
+      {
+       "text": "Sanggahan atas perbedaan data wajib disampaikan secara tertulis kepada MOMEN selambat-lambatnya H+3 (tiga) Hari Kerja sejak transaksi terjadi."
+      },
+      {
+       "text": "Apabila tidak ada laporan hingga batas waktu tersebut, data transaksi dianggap telah disetujui, akurat, dan diterima secara penuh."
+      }
+     ]
+    },
+    {
+     "label": "Penanganan Dispute",
+     "text": "Laporan selisih yang dikategorikan sebagai dispute akan diinvestigasi oleh MOMEN dan/atau Partner maksimal dalam waktu 7 (tujuh) Hari Kerja sejak laporan diterima secara lengkap."
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "id": "bab-iv",
+   "text": "Bab IV: Kepatuhan APU-PPT, Pencegahan Fraud, dan Pembekuan Akun"
+  },
+  {
+   "t": "h3",
+   "id": "pasal-8",
+   "text": "Pasal 8 – Kepatuhan APU-PPT-PPPSPM & Larangan Aktivitas"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "text": "Pengguna dan Akun Bisnis wajib mematuhi seluruh peraturan perundang-undangan mengenai Anti-Pencucian Uang, Pencegahan Pendanaan Terorisme, dan Pencegahan Pendanaan Proliferasi Senjata Pemusnah Massal (APU-PPT-PPPSPM)."
+    },
+    {
+     "label": "Daftar Larangan Aktivitas Bisnis",
+     "text": "Platform MOMEN dilarang keras digunakan untuk memproses dana yang berkaitan dengan:",
+     "sub": [
+      {
+       "text": "Perjudian online maupun offline;"
+      },
+      {
+       "text": "Pornografi atau materi eksploitasi seksual;"
+      },
+      {
+       "text": "Perdagangan orang dan prostitusi;"
+      },
+      {
+       "text": "Perdagangan narkotika, psikotropika, atau senjata api;"
+      },
+      {
+       "text": "Penipuan, skema ponzi, atau penggalangan dana ilegal;"
+      },
+      {
+       "text": "Hasil tindak pidana pencucian uang dan pendanaan terorisme;"
+      },
+      {
+       "text": "Kegiatan lain yang melanggar hukum Republik Indonesia."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "id": "pasal-9",
+   "text": "Pasal 9 – Hak Pembekuan, Penangguhan Dana (Hold Funds), dan Mandat Regulasi"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "label": "Eksekusi Penangguhan",
+     "text": "Partner berizin berhak melakukan pembekuan fisik dana (hold funds) atau pemblokiran fitur atas permohonan MOMEN atau instruksi pihak berwenang, tanpa kewajiban ganti rugi atau bunga, dalam hal:",
+     "sub": [
+      {
+       "text": "Terindikasi adanya transaksi mencurigakan, chargeback abnormal, peretasan, atau penggunaan data palsu saat verifikasi KYB/KYC;"
+      },
+      {
+       "text": "Terdapat perintah resmi dari Bank Indonesia, OJK, PPATK, Kepolisian, Kejaksaan, atau Pengadilan;"
+      },
+      {
+       "text": "Terjadi sengketa kepemilikan atau pertentangan instruksi internal di dalam Akun Bisnis;"
+      },
+      {
+       "text": "Akun Bisnis menolak memberikan pembaruan dokumen legalitas."
+      }
+     ]
+    },
+    {
+     "label": "Penghentian Layanan Berdasarkan Mandat Regulasi (Regulatory Mandate)",
+     "text": "",
+     "sub": [
+      {
+       "text": "Dalam hal terjadi perubahan peraturan perundang-undangan, kebijakan, instruksi, atau perintah mendadak dari Bank Indonesia (BI), Otoritas Jasa Keuangan (OJK), Pusat Pelaporan dan Analisis Transaksi Keuangan (PPATK), atau instansi pemerintah berwenang lainnya yang mewajibkan MOMEN atau Partner untuk menghentikan sebagian atau seluruh fitur Layanan, membatasi operasional, atau menutup akses Akun Bisnis secara seketika:"
+      },
+      {
+       "text": "Tindakan penghentian atau pembatasan tersebut dilaksanakan untuk memenuhi kewajiban hukum yang sah dan BUKAN merupakan bentuk cidera janji / wanprestasi dari MOMEN."
+      },
+      {
+       "text": "MOMEN dan Partner dibebaskan secara penuh dari segala bentuk kewajiban ganti rugi, denda, atau tuntutan hukum dari Pengguna, Akun Bisnis, maupun pihak ketiga manapun atas kerugian yang timbul akibat penghentian Layanan berdasarkan mandat regulasi tersebut."
+      }
+     ]
+    },
+    {
+     "label": "Prosedur Penangguhan",
+     "text": "MOMEN akan menyampaikan pemberitahuan tertulis mengenai penangguhan dan memberikan kesempatan klarifikasi kepada Akun Bisnis. Dalam kondisi darurat, penangguhan dapat dilakukan secara serta-merta (seketika)."
+    },
+    {
+     "text": "MOMEN dan Partner dibebaskan dari tanggung jawab atas kerugian materiil maupun immaterial yang timbul akibat tidak dapat diaksesnya dana selama masa penangguhan yang sah."
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "id": "bab-v",
+   "text": "Bab V: Batasan Tanggung Jawab dan Ganti Rugi"
+  },
+  {
+   "t": "h3",
+   "id": "pasal-10",
+   "text": "Pasal 10 – Penolakan Jaminan (Disclaimer of Warranties)"
+  },
+  {
+   "t": "p",
+   "text": "PLATFORM MOMEN DISEDIAKAN DALAM KONDISI \"SEBAGAIMANA ADANYA\" (AS IS) DAN \"SEBAGAIMANA TERSEDIA\" (AS AVAILABLE). MOMEN TIDAK TUNDUK PADA JAMINAN APAPUN, BAIK TERSURAT MAUPUN TERSIRAT, TERMASUK NAMUN TIDAK TERBATAS PADA JAMINAN KELAYAKAN BISA DIPERDAGANGKAN (MERCHANTABILITY) SERTA KESESUAIAN UNTUK TUJUAN TERTENTU."
+  },
+  {
+   "t": "h3",
+   "id": "pasal-11",
+   "text": "Pasal 11 – Pengecualian Tanggung Jawab Kerusakan (Exclusion of Damages)"
+  },
+  {
+   "t": "p",
+   "text": "MOMEN, DIREKSI, KOMISARIS, KARYAWAN, DAN PARTNER DIBEBASKAN DARI TANGGUNG JAWAB ATAS:"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "label": "Gangguan Sistem Partner",
+     "text": "Tingkat ketersediaan (uptime) dan Service Level Agreement (SLA) eksekusi transaksi tunduk pada SLA masing-masing Partner. MOMEN dibebaskan dari tanggung jawab atas kegagalan transaksi akibat downtime, pemeliharaan sistem, atau gangguan jaringan API Partner/Bank/Provider."
+    },
+    {
+     "label": "Kesalahan Input Data",
+     "text": "Kerugian akibat kesalahan Pengguna dalam memasukkan nomor rekening, nama bank, atau nominal transfer."
+    },
+    {
+     "label": "Penyalahgunaan Kredensial",
+     "text": "Kerugian akibat kebocoran kata sandi, API Key, OTP, PIN, atau peretasan perangkat Pengguna."
+    },
+    {
+     "label": "Kerugian Tidak Langsung",
+     "text": "Kerugian immateriil, kehilangan potensi keuntungan (loss of profit), kehilangan pendapatan, atau kerugian reputasi."
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "id": "pasal-12",
+   "text": "Pasal 12 – Keadaan Kahar (Force Majeure)"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "label": "Pembebasan Kewajiban",
+     "text": "MOMEN dibebaskan dari tanggung jawab atas keterlambatan atau kegagalan pelaksanaan kewajiban akibat peristiwa di luar kendali wajar MOMEN (\"Keadaan Kahar\"), termasuk bencana alam, perang, kerusuhan, tindakan terorisme, pemogokan massal, wabah penyakit, gangguan jaringan telekomunikasi/internet skala nasional, pemadaman listrik massal, serangan siber terstruktur skala besar, atau kebijakan/instruksi pemerintah dan regulator."
+    },
+    {
+     "label": "Penanganan Keadaan Kahar",
+     "text": "MOMEN akan berupaya wajar untuk menyampaikan pemberitahuan elektronik serta melakukan pemulihan sistem (disaster recovery) dalam jangka waktu sesingkat-singkatnya."
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "id": "pasal-13",
+   "text": "Pasal 13 – Batas Maksimal Ganti Rugi (Cap of Liability)"
+  },
+  {
+   "t": "p",
+   "text": "DALAM HAL TIMBUL KEWAJIBAN GANTI RUGI BERDASARKAN PUTUSAN PENGADILAN YANG BERKEKUATAN HUKUM TETAP AKIBAT KELALAIAN BERAT MAUPUN KESENGAJAAN YANG TERBUKTI SAH DILAKUKAN OLEH MOMEN, BATAS MAKSIMAL TANGGUNG JAWAB AKUMULATIF MOMEN DIBATASI MAKSIMAL SEBESAR TOTAL BIAYA LAYANAN (FEE) YANG NYATA-NYATA TELAH DITERIMA MOMEN DARI AKUN BISNIS TERSEBUT DALAM 3 (TIGA) BULAN TERAKHIR SEBELUM TIMBULNYA PERISTIWA KLAIM."
+  },
+  {
+   "t": "h3",
+   "id": "pasal-14",
+   "text": "Pasal 14 – Ganti Rugi (Indemnification)"
+  },
+  {
+   "t": "p",
+   "text": "Pengguna dan Akun Bisnis setuju untuk membela, mengganti rugi, dan membebaskan MOMEN, pemegang saham, direksi, karyawan, dan Partner dari segala bentuk klaim, gugatan, kerugian, denda, dan biaya advokat yang timbul akibat:"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "text": "Pelanggaran terhadap Perjanjian ini, Kebijakan Privasi, atau hukum yang berlaku;"
+    },
+    {
+     "text": "Penyalahgunaan Platform oleh Pengguna atau Pengguna Tambahan;"
+    },
+    {
+     "text": "Transaksi fraud atau sengketa yang dipicu oleh aktivitas bisnis Akun Bisnis;"
+    },
+    {
+     "text": "Pelanggaran terhadap hak pihak ketiga (termasuk Hak Kekayaan Intelektual atau hak privasi data)."
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "id": "bab-vi",
+   "text": "Bab VI: Kerahasiaan, Hak Cipta, dan Pelindungan Data"
+  },
+  {
+   "t": "h3",
+   "id": "pasal-15",
+   "text": "Pasal 15 – Hak Kekayaan Intelektual (HKI)"
+  },
+  {
+   "t": "p",
+   "text": "Seluruh sistem, kode sumber (source code), rancangan antarmuka (UI/UX), API, dokumentasi, merek dagang \"MOMEN\", logo, dan teknologi pada Platform merupakan hak milik penuh PT MOMEN INOVASI BERSAMA dan dilindungi undang-undang HKI. Pengguna dilarang merekayasa balik (reverse engineer), mendekompilasi, menyalin, atau membuat produk turunan dari Platform."
+  },
+  {
+   "t": "h3",
+   "id": "pasal-16",
+   "text": "Pasal 16 – Kerahasiaan (Confidentiality)"
+  },
+  {
+   "t": "p",
+   "text": "Masing-masing pihak wajib menjaga kerahasiaan seluruh informasi bisnis, teknis, keuangan, dan data transaksi pihak lainnya yang diperoleh selama penggunaan Platform, serta dilarang mengungkapkannya kepada pihak ketiga tanpa persetujuan tertulis, kecuali dipersyaratkan oleh hukum."
+  },
+  {
+   "t": "h3",
+   "id": "pasal-17",
+   "text": "Pasal 17 – Pelindungan Data Pribadi (PDP), Peran Data, & Offboarding"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "label": "Inkorporasi Kebijakan Privasi",
+     "text": "Ketentuan tata cara pemrosesan Data Pribadi diatur secara rinci dalam Kebijakan Privasi MOMEN yang merupakan bagian tidak terpisahkan dari Perjanjian ini."
+    },
+    {
+     "label": "Peran Pengendali dan Pemroses Data",
+     "text": "Akun Bisnis bertindak sebagai Pengendali Data (Data Controller) atas Data Pribadi karyawan/pelanggan yang diunggah ke Platform. MOMEN bertindak sebagai Pemroses Data (Data Processor) yang memproses data berdasarkan instruksi Akun Bisnis."
+    },
+    {
+     "label": "Jaminan Persetujuan (Consent Warranty)",
+     "text": "Akun Bisnis menjamin telah memperoleh persetujuan yang sah dari seluruh Subjek Data Pribadi sebelum membagikan data bersangkutan ke Platform."
+    },
+    {
+     "label": "Transfer Lintas Negara (Cross-Border Transfer)",
+     "text": "Pengguna memberikan persetujuan tegas kepada MOMEN untuk memproses atau menyimpan data pada infrastruktur cloud mitra di luar wilayah Republik Indonesia sesuai ketentuan Undang-Undang No. 27 Tahun 2022 tentang Pelindungan Data Pribadi."
+    },
+    {
+     "label": "Masa Retensi Data",
+     "text": "MOMEN dan/atau Partner wajib menyimpan data identitas, data transaksi, dan Audit Log paling singkat selama 5 (lima) tahun sejak transaksi dilakukan atau sejak hubungan usaha diakhiri guna memenuhi kewajiban hukum APU-PPT."
+    },
+    {
+     "label": "Penutupan Akun (Offboarding) & Penghapusan Data",
+     "text": "",
+     "sub": [
+      {
+       "text": "Akun Bisnis dapat mengajukan penutupan akun secara tertulis setelah sisa Available Balance diselesaikan dan tidak terdapat kewajiban tertunggak."
+      },
+      {
+       "text": "Setelah penutupan akun disetujui, akses seluruh Pengguna di bawah Akun Bisnis akan dinonaktifkan."
+      },
+      {
+       "text": "Data Pribadi, data transaksi, dan Audit Log tetap disimpan dalam lingkungan basis data terisolasi selama masa retensi 5 (lima) tahun."
+      },
+      {
+       "text": "Setelah masa retensi berakhir, MOMEN akan menghapus, memusnahkan, atau menganonimkan data dari sistem secara permanen, kecuali diwajibkan lain oleh instruksi resmi instansi penegak hukum."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "id": "bab-vii",
+   "text": "Bab VII: Hukum yang Mengatur dan Penyelesaian Sengketa"
+  },
+  {
+   "t": "h3",
+   "id": "pasal-18",
+   "text": "Pasal 18 – Hukum yang Berlaku (Governing Law)"
+  },
+  {
+   "t": "p",
+   "text": "Perjanjian ini diatur, ditafsirkan, dan dilaksanakan berdasarkan hukum materiil dan formal yang berlaku di Republik Indonesia."
+  },
+  {
+   "t": "h3",
+   "id": "pasal-19",
+   "text": "Pasal 19 – Penyelesaian Sengketa"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "label": "Musyawarah untuk Mufakat",
+     "text": "Setiap perselisihan yang timbul dari Perjanjian ini wajib diselesaikan secara musyawarah untuk mufakat dalam jangka waktu 30 (tiga puluh) hari kalender sejak pemberitahuan tertulis dikirimkan."
+    },
+    {
+     "label": "Pengadilan Negeri",
+     "text": "Apabila sengketa tidak selesai melalui musyawarah, Para Pihak sepakat untuk menyelesaikan sengketa tersebut melalui yurisdiksi eksklusif pada Pengadilan Negeri Jakarta Selatan."
+    },
+    {
+     "text": "Setiap klaim, tuntutan, atau gugatan hukum yang timbul dari atau sehubungan dengan Perjanjian ini wajib diajukan oleh Akun Bisnis selambat-lambatnya dalam waktu 6 (enam) bulan sejak terjadinya peristiwa yang mendasari timbulnya klaim tersebut, dan hak untuk menuntut dianggap gugur secara hukum apabila melampaui tenggat waktu tersebut."
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "id": "pasal-20",
+   "text": "Pasal 20 – Keabsahan Alat Bukti Elektronik & Audit Log"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "text": "Para Pihak sepakat bahwa salinan data elektronik, checkbox persetujuan, tautan verifikasi, email konfirmasi, dan Audit Log pada basis data MOMEN merupakan alat bukti elektronik yang sah, otentik, dan mengikat di pengadilan berdasarkan UU ITE."
+    },
+    {
+     "text": "Ketidakabsahan satu atau lebih pasal dalam Perjanjian ini tidak mengurangi keabsahan pasal-pasal lainnya (Severability)."
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "id": "bab-viii",
+   "text": "Bab VIII: Pemberitahuan Resmi, Penutup, dan Pembaruan"
+  },
+  {
+   "t": "h3",
+   "id": "pasal-21",
+   "text": "Pasal 21 – Alamat Komunikasi dan Pemberitahuan Resmi (Notices)"
+  },
+  {
+   "t": "ol",
+   "start": 1,
+   "items": [
+    {
+     "label": "Alamat Surat-Menyurat Elektronik Resmi",
+     "text": "Alamat email Admin Utama (Owner) dan/atau email perusahaan yang terdaftar saat verifikasi KYB/KYC diakui secara sah menurut hukum sebagai saluran komunikasi serta alamat korespondensi elektronik resmi bagi Akun Bisnis."
+    },
+    {
+     "label": "Keabsahan Penyampaian Pemberitahuan",
+     "text": "Setiap pemberitahuan resmi, pembaruan Perjanjian, surat teguran (somasi), maupun korespondensi hukum lainnya yang dikirimkan MOMEN ke alamat email resmi tersebut dianggap telah diterima secara sah dan mengikat pada saat terbukti terkirim oleh sistem (delivered status)."
+    },
+    {
+     "label": "Kewajiban Pembaruan Data Kontak",
+     "text": "Akun Bisnis bertanggung jawab penuh untuk memastikan alamat email Admin Utama selalu aktif dan dapat diakses."
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "id": "pasal-22",
+   "text": "Pasal 22 – Pembaruan Syarat dan Ketentuan"
+  },
+  {
+   "t": "p",
+   "text": "MOMEN berhak mengubah atau memperbarui Perjanjian ini sewaktu-waktu dengan memberikan pemberitahuan tertulis secara elektronik sekurang-kurangnya 7 (tujuh) hari kalender sebelum tanggal pemberlakuan efektif, kecuali untuk perubahan mendesak terkait kepatuhan regulasi atau mitigasi risiko keamanan yang dapat diberlakukan secara seketika. Keberlanjutan penggunaan Platform setelah jangka waktu pemberitahuan mengindikasikan persetujuan penuh terhadap pembaruan Perjanjian ini."
+  },
+  {
+   "t": "p",
+   "text": "Dengan mendaftarkan akun Pengguna, membuat Akun Bisnis, atau mencentang kotak persetujuan elektronik pada Dashboard, Pengguna secara sah mewakili dirinya sendiri atau entitas yang diwakilinya untuk mengikatkan diri pada Perjanjian ini."
+  }
+ ]
+}

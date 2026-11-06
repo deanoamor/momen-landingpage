@@ -8,7 +8,7 @@ const base = {
   twitter: { card: 'summary_large_image' as const },
 }
 
-export const SEO: Record<'front' | 'personal' | 'business', Metadata> = {
+export const SEO: Record<'front' | 'personal' | 'business' | 'hubungi' | 'legal', Metadata> = {
   front: {
     title: 'momen. | Satu Platform untuk Berbagai Solusi Keuangan',
     description:
@@ -23,6 +23,20 @@ export const SEO: Record<'front' | 'personal' | 'business', Metadata> = {
       'Cairkan gaji yang sudah kamu kerjakan sebelum tanggal gajian. Tanpa bunga, tanpa utang, langsung dari aplikasi Momen.',
     alternates: { canonical: '/personal' },
     openGraph: { ...base.openGraph, url: '/personal', title: 'Momen Kasbon | Akses Gajimu Kapan Saja', images: [{ url: '/img/app-beranda.jpg' }] },
+    twitter: base.twitter,
+  },
+  hubungi: {
+    title: 'Hubungi Kami | momen.',
+    description: 'Hubungi tim Momen lewat email hello@momen.co atau ikuti kami di Instagram dan LinkedIn.',
+    alternates: { canonical: '/hubungi' },
+    openGraph: { ...base.openGraph, url: '/hubungi', title: 'Hubungi Kami | momen.' },
+    twitter: base.twitter,
+  },
+  legal: {
+    title: 'Syarat & Privasi | momen.',
+    description: 'Syarat & Ketentuan dan Kebijakan Privasi Momen (PT Momen Inovasi Bersama), berlaku sejak 25 Juli 2026.',
+    alternates: { canonical: '/syarat-privasi' },
+    openGraph: { ...base.openGraph, url: '/syarat-privasi', title: 'Syarat & Privasi | momen.' },
     twitter: base.twitter,
   },
   business: {
