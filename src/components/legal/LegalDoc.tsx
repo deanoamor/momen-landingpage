@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { BP } from '@/lib/path'
 import { LegalBody, type LegalData } from './LegalBody'
 
@@ -33,12 +32,12 @@ export default function LegalDoc({
               {heading} <span style={{ color: '#1E4841', fontWeight: 500 }}>{accent}</span>
             </h1>
             <nav className="lx-tabs" aria-label="Dokumen legal">
-              <Link href={`${BP}/syarat-ketentuan`} aria-current={current === 'tnc' ? 'page' : undefined}>
+              <a href={`${BP}/syarat-ketentuan`} aria-current={current === 'tnc' ? 'page' : undefined}>
                 Syarat &amp; Ketentuan
-              </Link>
-              <Link href={`${BP}/kebijakan-privasi`} aria-current={current === 'privasi' ? 'page' : undefined}>
+              </a>
+              <a href={`${BP}/kebijakan-privasi`} aria-current={current === 'privasi' ? 'page' : undefined}>
                 Kebijakan Privasi
-              </Link>
+              </a>
             </nav>
           </div>
         </div>
