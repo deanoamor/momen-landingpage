@@ -254,3 +254,4 @@ html{scroll-padding-top:88px}
 .lx-doc a{color:#1E4841;text-decoration:underline;text-underline-offset:3px}
 .lx-doc p.lx-co{padding:18px 22px;border-radius:16px;background:#F4F6F6;border-left:3px solid #1E4841;font-size:14px;line-height:1.7;color:#242E2C}
 @media (max-width:560px){.lx-doc{border-radius:20px}.lx-doc ol,.lx-doc ul{padding-left:1.35em}}
+.lx-doc a.ct{text-decoration:none}

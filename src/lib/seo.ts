@@ -8,7 +8,7 @@ const base = {
   twitter: { card: 'summary_large_image' as const },
 }
 
-export const SEO: Record<'front' | 'personal' | 'business' | 'hubungi' | 'legal', Metadata> = {
+export const SEO: Record<'front' | 'personal' | 'business' | 'hubungi' | 'tnc' | 'privasi' | 'hapus', Metadata> = {
   front: {
     title: 'momen. | Satu Platform untuk Berbagai Solusi Keuangan',
     description:
@@ -32,11 +32,25 @@ export const SEO: Record<'front' | 'personal' | 'business' | 'hubungi' | 'legal'
     openGraph: { ...base.openGraph, url: '/hubungi', title: 'Hubungi Kami | momen.' },
     twitter: base.twitter,
   },
-  legal: {
-    title: 'Syarat & Privasi | momen.',
-    description: 'Syarat & Ketentuan dan Kebijakan Privasi Momen (PT Momen Inovasi Bersama), berlaku sejak 25 Juli 2026.',
-    alternates: { canonical: '/syarat-privasi' },
-    openGraph: { ...base.openGraph, url: '/syarat-privasi', title: 'Syarat & Privasi | momen.' },
+  tnc: {
+    title: 'Syarat & Ketentuan | momen.',
+    description: 'Syarat dan Ketentuan Layanan Momen (PT Momen Inovasi Bersama), berlaku sejak 25 Juli 2026.',
+    alternates: { canonical: '/syarat-ketentuan' },
+    openGraph: { ...base.openGraph, url: '/syarat-ketentuan', title: 'Syarat & Ketentuan | momen.' },
+    twitter: base.twitter,
+  },
+  privasi: {
+    title: 'Kebijakan Privasi | momen.',
+    description: 'Kebijakan Privasi Momen: cara PT Momen Inovasi Bersama mengumpulkan, memproses, dan melindungi Data Pribadi Anda.',
+    alternates: { canonical: '/kebijakan-privasi' },
+    openGraph: { ...base.openGraph, url: '/kebijakan-privasi', title: 'Kebijakan Privasi | momen.' },
+    twitter: base.twitter,
+  },
+  hapus: {
+    title: 'Hapus Akun | momen.',
+    description: 'Cara mengajukan penghapusan akun Momen melalui email ke tim dukungan di support@momen.co.',
+    alternates: { canonical: '/delete-account' },
+    openGraph: { ...base.openGraph, url: '/delete-account', title: 'Hapus Akun | momen.' },
     twitter: base.twitter,
   },
   business: {
