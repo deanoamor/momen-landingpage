@@ -21,8 +21,8 @@ export const SEO: Record<'front' | 'personal' | 'business' | 'hubungi' | 'tnc' |
     title: 'Momen Kasbon | Akses Gajimu Kapan Saja, Dimana Saja',
     description:
       'Cairkan gaji yang sudah kamu kerjakan sebelum tanggal gajian. Tanpa bunga, tanpa utang, langsung dari aplikasi Momen.',
-    alternates: { canonical: '/personal' },
-    openGraph: { ...base.openGraph, url: '/personal', title: 'Momen Kasbon | Akses Gajimu Kapan Saja', images: [{ url: '/img/app-beranda.jpg' }] },
+    alternates: { canonical: '/kasbon' },
+    openGraph: { ...base.openGraph, url: '/kasbon', title: 'Momen Kasbon | Akses Gajimu Kapan Saja', images: [{ url: '/img/app-beranda.jpg' }] },
     twitter: base.twitter,
   },
   hubungi: {

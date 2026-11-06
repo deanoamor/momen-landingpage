@@ -17,7 +17,7 @@ Syarat sekali saja: **Settings → Pages → Build and deployment → Source: Gi
 Build versi Pages di lokal: `GITHUB_PAGES=true npm run build` (hasil di `out/`).
 
 ## Struktur
-- `/` Front · `/personal` · `/business` (`src/app/**/page.tsx`)
+- `/` Front · `/kasbon` · `/business` (`src/app/**/page.tsx`)
 - `src/components/<halaman>/*` — satu file per section; `SiteHeader.tsx` — navbar (varian per halaman + menu hamburger tanpa JS untuk ≤900px)
 - `src/lib/seo.ts` — metadata, Open Graph, JSON-LD (Organization + FAQPage); `src/lib/faq.json` — isi FAQ untuk JSON-LD
 - `Reveal.tsx` — animasi scroll (konten tetap terlihat tanpa JS)
