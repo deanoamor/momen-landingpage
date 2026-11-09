@@ -35,15 +35,15 @@ export const SEO: Record<'front' | 'personal' | 'business' | 'hubungi' | 'tnc' |
   tnc: {
     title: 'Syarat & Ketentuan | momen.',
     description: 'Syarat dan Ketentuan Layanan Momen (PT Momen Inovasi Bersama), berlaku sejak 25 Juli 2026.',
-    alternates: { canonical: '/syarat-ketentuan' },
-    openGraph: { ...base.openGraph, url: '/syarat-ketentuan', title: 'Syarat & Ketentuan | momen.' },
+    alternates: { canonical: '/terms-condition' },
+    openGraph: { ...base.openGraph, url: '/terms-condition', title: 'Syarat & Ketentuan | momen.' },
     twitter: base.twitter,
   },
   privasi: {
     title: 'Kebijakan Privasi | momen.',
     description: 'Kebijakan Privasi Momen: cara PT Momen Inovasi Bersama mengumpulkan, memproses, dan melindungi Data Pribadi Anda.',
-    alternates: { canonical: '/kebijakan-privasi' },
-    openGraph: { ...base.openGraph, url: '/kebijakan-privasi', title: 'Kebijakan Privasi | momen.' },
+    alternates: { canonical: '/privacy-policy' },
+    openGraph: { ...base.openGraph, url: '/privacy-policy', title: 'Kebijakan Privasi | momen.' },
     twitter: base.twitter,
   },
   hapus: {
