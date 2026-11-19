@@ -8,7 +8,7 @@ const base = {
   twitter: { card: 'summary_large_image' as const },
 }
 
-export const SEO: Record<'front' | 'personal' | 'business' | 'hubungi' | 'tnc' | 'privasi' | 'hapus', Metadata> = {
+export const SEO: Record<'front' | 'personal' | 'business' | 'hubungi' | 'tnc' | 'privasi' | 'hapus' | 'harga', Metadata> = {
   front: {
     title: 'momen. | Satu Platform untuk Berbagai Solusi Keuangan',
     description:
@@ -51,6 +51,13 @@ export const SEO: Record<'front' | 'personal' | 'business' | 'hubungi' | 'tnc' |
     description: 'Cara mengajukan penutupan akun Momen melalui email ke tim dukungan di support@momen.co.',
     alternates: { canonical: '/delete-account' },
     openGraph: { ...base.openGraph, url: '/delete-account', title: 'Penutupan Akun | momen.' },
+    twitter: base.twitter,
+  },
+  harga: {
+    title: 'Harga | momen.',
+    description: 'Lihat harga layanan Momen: biaya Virtual Account, QRIS, dan transfer, dengan rincian biaya yang jelas.',
+    alternates: { canonical: '/harga' },
+    openGraph: { ...base.openGraph, url: '/harga', title: 'Harga | momen.' },
     twitter: base.twitter,
   },
   business: {
